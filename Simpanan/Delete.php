@@ -8,7 +8,7 @@ if (isset($_GET['id'])) {
     $stmt = $pdo->prepare('SELECT * FROM kontak WHERE id = ?');
     $stmt->execute([$_GET['id']]);
     $contact = $stmt->fetch(PDO::FETCH_ASSOC);
-    if (!$contact) {
+    if (!$layanan) {
         exit('Contact doesn\'t exist with that ID!');
     }
     // Make sure the user confirms beore deletion
@@ -33,7 +33,7 @@ if (isset($_GET['id'])) {
 <?=template_header('Delete')?>
 
 <div class="content delete">
-	<h2>Delete Contact #<?=$contact['id']?></h2>
+	<h2>Delete Simpanan #<?=$contact['id']?></h2>
     <?php if ($msg): ?>
     <p><?=$msg?></p>
     <?php else: ?>

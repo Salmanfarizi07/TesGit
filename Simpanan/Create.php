@@ -13,7 +13,7 @@ if (!empty($_POST)) {
     $jumlah_simpanan = isset($_POST['jumlah_simpanan']) ? $_POST['jumlah_simpanan'] : '';
 
     // Insert new record into the contacts table
-    $stmt = $pdo->prepare('INSERT INTO kontak VALUES (?, ?, ?, ?, ?)');
+    $stmt = $pdo->prepare('INSERT INTO Simpanan VALUES (?, ?, ?, ?, ?)');
     $stmt->execute([$id_user, $jenis_simpanan, $tgl_awal, $jumlah_simpanan]);
     // Output message
     $msg = 'Created Successfully!';

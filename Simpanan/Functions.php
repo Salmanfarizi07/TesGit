@@ -11,6 +11,9 @@ function pdo_connect_mysql() {
         exit('Failed to connect to database!');
     }
 }
+
+$mysqli = new mysqli("localhost","root","","db_layanan");
+
 function template_header($title) {
 echo <<<EOT
 <!DOCTYPE html>
