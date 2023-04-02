@@ -24,6 +24,7 @@
                         <table class="table table-bordered">
                             <thead>
                               <tr>
+                                <th scope="col">id</th>
                                 <th scope="col">id user</th>
                                 <th scope="col">status user</th>
                                 <th scope="col">nama user</th>
@@ -37,12 +38,12 @@
                               @forelse ($users as $user)
                                 <tr>
                                     <td class="text-center">
-                                        <img src="{{ asset('/storage/posts/'.$post->image) }}" class="rounded" style="width: 150px">
+                                        <img src="{{ asset('/storage/users/'.$post->image) }}" class="rounded" style="width: 150px">
                                     </td>
                                     <td>{{ $user->title }}</td>
                                     <td>{!! $user->content !!}</td>
                                     <td class="text-center">
-                                        <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('posts.destroy', $user->id) }}" method="POST">
+                                        <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('users.destroy', $user->id) }}" method="POST">
                                             <a href="{{ route('posts.show', $user->id) }}" class="btn btn-sm btn-dark">SHOW</a>
                                             <a href="{{ route('posts.edit', $user->id) }}" class="btn btn-sm btn-primary">EDIT</a>
                                             @csrf
