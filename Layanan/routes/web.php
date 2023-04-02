@@ -60,10 +60,13 @@ Route::get('/Saham/edit/{Id_Saham}','App\Http\Controllers\SahamController@edit')
 Route::post('/Saham/update','App\Http\Controllers\SahamController@update');
 Route::get('/Saham/hapus/{Id_Saham}','App\Http\Controllers\SahamController@hapus');
 
-/**
+    /**
      * Home Routes
      */
     Route::get('/', 'HomeController@index')->name('home.index');
+    /**
+     * Read table Routes
+     */
     Route::resource('/user', \App\Http\Controllers\UserController::class);
 
     Route::group(['middleware' => ['guest']], function() {
