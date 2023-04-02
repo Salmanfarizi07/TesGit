@@ -31,6 +31,14 @@ Route::get('/tambahPembayaran', function () {
     return view('tambahPembayaran');
 });
 
+Route::get('/Peminjaman', function () {
+    return view('Peminjaman');
+});
+
+Route::get('/tambahPeminjaman', function () {
+    return view('tambahPeminjaman');
+});
+
 Route::get('/Saham', function () {
     return view('Saham');
 });
@@ -52,6 +60,13 @@ Route::post('/Pembayaran/store','App\Http\Controllers\PembayaranController@store
 Route::get('/Pembayaran/edit/{Id_Pembayaran}','App\Http\Controllers\PembayaranController@edit');
 Route::post('/Pembayaran/update','App\Http\Controllers\PembayaranController@update');
 Route::get('/Pembayaran/hapus/{Id_Pembayaran}','App\Http\Controllers\PembayaranController@hapus');
+
+Route::get('/Peminjaman', 'App\Http\Controllers\PeminjamanController@index');
+Route::get('/Peminjaman/tambah','App\Http\Controllers\PeminjamanController@tambah');
+Route::post('/Peminjaman/store','App\Http\Controllers\PeminjamanController@store');
+Route::get('/Peminjaman/edit/{Id_Peminjaman}','App\Http\Controllers\PeminjamanController@edit');
+Route::post('/Peminjaman/update','App\Http\Controllers\PeminjamanController@update');
+Route::get('/Peminjaman/hapus/{Id_Peminjaman}','App\Http\Controllers\PeminjamanController@hapus');
 
 Route::get('/Saham', 'App\Http\Controllers\SahamController@index');
 Route::get('/Saham/tambah','App\Http\Controllers\SahamController@tambah');
