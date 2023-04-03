@@ -47,6 +47,14 @@ Route::get('/tambahSaham', function () {
     return view('tambahSaham');
 });
 
+Route::get('/Jasa', function () {
+    return view('Jasa');
+});
+
+Route::get('/tambahJasa', function () {
+    return view('tambahJasa');
+});
+
 Route::get('/Surat', 'App\Http\Controllers\SuratController@index');
 Route::get('/Surat/tambah','App\Http\Controllers\SuratController@tambah');
 Route::post('/Surat/store','App\Http\Controllers\SuratController@store');
@@ -74,6 +82,13 @@ Route::post('/Saham/store','App\Http\Controllers\SahamController@store');
 Route::get('/Saham/edit/{Id_Saham}','App\Http\Controllers\SahamController@edit');
 Route::post('/Saham/update','App\Http\Controllers\SahamController@update');
 Route::get('/Saham/hapus/{Id_Saham}','App\Http\Controllers\SahamController@hapus');
+
+Route::get('/Jasa', 'App\Http\Controllers\JasaController@index');
+Route::get('/Jasa/tambah','App\Http\Controllers\JasaController@tambah');
+Route::post('/Jasa/store','App\Http\Controllers\JasaController@store');
+Route::get('/Jasa/edit/{Id_Jasa}','App\Http\Controllers\JasaController@edit');
+Route::post('/Jasa/update','App\Http\Controllers\JasaController@update');
+Route::get('/Jasa/hapus/{Id_Jasa}','App\Http\Controllers\JasaController@hapus');
 
     /**
      * Home Routes
