@@ -49,7 +49,7 @@ class JasaController extends Controller
     public function edit($Id_Jasa)
     {
         // mengambil data Jasa berdasarkan id yang dipilih
-        $Saham = DB::table('Jasa')->where('Id_Jasa',$Id_Jasa)->get();
+        $Jasa = DB::table('Jasa')->where('Id_Jasa',$Id_Jasa)->get();
         // passing data Jasa yang didapat ke view edit.blade.php
         return view('editJasa',['Jasa' => $Jasa]);
     
