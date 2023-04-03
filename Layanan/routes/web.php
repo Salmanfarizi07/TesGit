@@ -90,13 +90,12 @@ Route::get('/Jasa/edit/{Id_Jasa}','App\Http\Controllers\JasaController@edit');
 Route::post('/Jasa/update','App\Http\Controllers\JasaController@update');
 Route::get('/Jasa/hapus/{Id_Jasa}','App\Http\Controllers\JasaController@hapus');
 
+Route::group(['namespace' => 'App\Http\Controllers'], function()
+{   
     /**
      * Home Routes
      */
     Route::get('/', 'HomeController@index')->name('home.index');
-    /**
-     * Read table Routes
-     */
     Route::resource('/user', \App\Http\Controllers\UserController::class);
 
     Route::group(['middleware' => ['guest']], function() {
@@ -121,3 +120,5 @@ Route::get('/Jasa/hapus/{Id_Jasa}','App\Http\Controllers\JasaController@hapus');
         Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
     });
 
+    
+});
