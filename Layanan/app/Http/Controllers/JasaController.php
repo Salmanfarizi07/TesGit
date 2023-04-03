@@ -63,7 +63,6 @@ class JasaController extends Controller
             
             'Nama_Jasa' => $request->Nama_Jasa,
             'Jenis_Jasa' => $request->Jenis_Jasa,
-            'Jenis_Jasa' => $request->Jenis_Jasa,
             'Desc_Jasa' => $request->Desc_Jasa,
             'Tgl_Pengajuan' => $request->tgl_Pengajuan,
             'Status_Jasa' => $request->Status_Jasa
