@@ -91,6 +91,13 @@ Route::get('/Jasa/edit/{Id_Jasa}','App\Http\Controllers\JasaController@edit');
 Route::post('/Jasa/update','App\Http\Controllers\JasaController@update');
 Route::get('/Jasa/hapus/{Id_Jasa}','App\Http\Controllers\JasaController@hapus');
 
+Route::get('/simpanan','SimpananController@simpanan');
+Route::get('/simpanan/tambah','SimpananController@tambahsimpanan');
+Route::post('/simpanan/input','SimpananController@input');
+Route::get('/simpanan/edit/{id}','SimpananController@editsimpanan');
+Route::post('/simpanan/update','SimpananController@update');
+Route::get('/simpanan/hapus/{id}','SimpananController@hapus');
+
 Route::group(['namespace' => 'App\Http\Controllers'], function()
 {   
     /**
