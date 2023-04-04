@@ -14,7 +14,7 @@ class PeminjamanController extends Controller
     	$Peminjaman = DB::table('Peminjaman')->get();
  
     	// mengirim data Peminjaman ke view index
-    	return view('Peminjaman',['Peminjaman' => $Pembayaran]);
+    	return view('Peminjaman',['Peminjaman' => $Peminjaman]);
  
     }
     
