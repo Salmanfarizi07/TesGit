@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+//read, edit, delete tabel user
+Route::resource('/user', \App\Http\Controllers\UserController::class);
 
 Route::get('/Surat', function () {
     return view('Surat');
@@ -96,7 +97,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
      * Home Routes
      */
     Route::get('/', 'HomeController@index')->name('home.index');
-    Route::resource('/user', \App\Http\Controllers\UserController::class);
+    
 
     Route::group(['middleware' => ['guest']], function() {
         /**
