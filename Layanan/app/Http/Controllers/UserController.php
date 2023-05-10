@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 //import Model "Post
-use App\Models\user;
+use App\Models\User;
 
 //return type View
 use Illuminate\View\View;
