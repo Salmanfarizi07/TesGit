@@ -10,7 +10,6 @@
 <form action="/Surat/store" method="post">
 		{{ csrf_field() }}
 
-		Id_User <input type="text" name="Id_User" required="required"> <br/>
 		Jenis_Surat <input type="text" name="Jenis_Surat" required="required"> <br/>
 		Desc_Surat <input type="text" name="Desc_Surat" required="required"> <br/>
 		Jenis_Tabungan <input type="text" name="Jenis_Tabungan" required="required"> <br/>
