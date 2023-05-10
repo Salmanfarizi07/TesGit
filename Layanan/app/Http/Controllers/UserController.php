@@ -22,7 +22,7 @@ class UserController extends Controller
     public function index(): View
     {
         //get posts
-        $user = user::latest()->paginate(5);
+        $User = user::latest()->paginate(5);
 
         //render view with posts
         return view('user.index', compact('user'));
@@ -31,7 +31,7 @@ class UserController extends Controller
     public function edit(string $id): View
     {
         //get post by ID
-        $user = user::findOrFail($id);
+        $User = user::findOrFail($id);
 
         //render view with post
         return view('user.edit', compact('user'));
@@ -57,17 +57,17 @@ class UserController extends Controller
         ]);
 
         //get post by ID
-        $user = user::findOrFail($id);
+        $User = user::findOrFail($id);
 
         //update post data
-        $user->status_user = $request->status_user;
-        $user->username = $request->username;
-        $user->no_telp = $request->no_telp;
-        $user->email = $request->email;
-        $user->password = $request->password;
+        $User->status_user = $request->status_user;
+        $User->username = $request->username;
+        $User->no_telp = $request->no_telp;
+        $User->email = $request->email;
+        $User->password = $request->password;
 
         //save post data
-        $user->save();
+        $User->save();
 
 
         //redirect to index
@@ -83,12 +83,12 @@ class UserController extends Controller
     public function destroy($id): RedirectResponse
     {
         //get post by ID
-        $user = user::findOrFail($id);
+        $User = user::findOrFail($id);
 
         
 
         //delete post
-        $user->delete();
+        $User->delete();
 
         //redirect to index
         return redirect()->route('user.index')->with(['success' => 'Data Berhasil Dihapus!']);
