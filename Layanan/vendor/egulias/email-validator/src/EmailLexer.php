@@ -3,6 +3,7 @@
 namespace Egulias\EmailValidator;
 
 use Doctrine\Common\Lexer\AbstractLexer;
+use Doctrine\Common\Lexer\Token;
 
 class EmailLexer extends AbstractLexer
 {
