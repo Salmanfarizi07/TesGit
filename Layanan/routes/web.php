@@ -20,7 +20,7 @@ Route::get('/Surat', function () {
     return view('Surat');
 });
 
-Route::get('/tambah', function () {
+Route::get('/tambahSurat', function () {
     return view('tambah');
 });
 
