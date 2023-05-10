@@ -34,7 +34,7 @@
                               </tr>
                             </thead>
                             <tbody>
-                            @forelse ($user as $item)
+                            @forelse ($User as $item)
             <tr>
                 <td>{{ $item->id_user }}</td>
                 <td>{{ $item->username }}</td>
@@ -60,7 +60,7 @@
     </tbody>
 </table>
 
-{{ $user->links() }}
+{{ $User->links() }}
                     </div>
                 </div>
             </div>
