@@ -37,58 +37,53 @@
 		@endforeach
 	</table>
 	<button class="tambah"><a href="/tambahSaham">Tambah Saham</a></button>
-	<style>
-		.tabel {
-			border-collapse: collapse;
-			margin: 25px 0;
-			font-size: 0.9em;
-			font-family: sans-serif;
-			min-width: 400px;
-			}
+	<style>.tabel {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
 
-		.tabel thead tr {
-			background-color: #009879;
-			color: #ffffff;
-			text-align: left;
-			}
+.tabel td,
+.tabel th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
 
-		.tabel th,
-		.tabel td {
-			padding: 12px 15px;
-		}
+.tabel tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-		.tabel tbody tr {
-    		border-bottom: 1px solid #dddddd;
-		}
+.tabel th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
 
-		.tabel tbody tr:nth-of-type(even) {
-			background-color: #f3f3f3;
-		}
+.h3 {
+  text-align: center;
+  margin-top: 50px;
+}
 
-		.tabel tbody tr:last-of-type {
-			border-bottom: 2px solid #009879;
-		}
+.tambah {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
 
-		.tabel tbody tr.active-row {
-			font-weight: bold;
-			color: #009879;
-		}
-		
-		.tambah {
-			background-color: #91c495; 
-			border: none;
-			color: white;
-			padding: 15px 32px;
-			text-align: center;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 16px;
-		}
+.tambah:hover {
+  background-color: #2E8B57;
+}
 
-		.h3 {
-			font-weight: bold;
-			font-family: sans-serif;
-		}
 
 
 	</style>
