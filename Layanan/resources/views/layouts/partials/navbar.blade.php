@@ -4,6 +4,7 @@
       <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
         <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
       </a>
+      <a class="navbar-brand" href="#">Koperasi Mahasiswa</a>
       <ul class="nav col-12 col-lg-auto ms-auto mb-2 justify-content-center mb-md-0">
         <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
         <li><a href="#" class="nav-link px-2 text-white">Information</a></li>
