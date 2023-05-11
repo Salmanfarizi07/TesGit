@@ -20,7 +20,7 @@
 
                             <div class="form-group">
                                 <label class="font-weight-bold">username</label>
-                                <input type="text" class="form-control @error('title') is-invalid @enderror" name="username" value="{{ old('username', $user->username) }}" placeholder="Masukkan username">
+                                <input type="text" class="form-control @error('title') is-invalid @enderror" name="username" value="{{ old('username', $User->username) }}" placeholder="Masukkan username">
                             
                                 <!-- error message untuk title -->
                                 @error('username')
@@ -32,7 +32,7 @@
 
                             <div class="form-group">
                                 <label class="font-weight-bold">No telepon</label>
-                                <input type="text" class="form-control @error('no_telp') is-invalid @enderror" name="no_telp" value="{{ old('no_telp', $user->no_telp) }}" placeholder="Masukkan no_telp">
+                                <input type="text" class="form-control @error('no_telp') is-invalid @enderror" name="no_telp" value="{{ old('no_telp', $User->no_telp) }}" placeholder="Masukkan no_telp">
                             
                                 <!-- error message untuk title -->
                                 @error('no_telp')
@@ -44,7 +44,7 @@
 
                             <div class="form-group">
                                 <label class="font-weight-bold">Email</label>
-                                <input type="text" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email', $user->email) }}" placeholder="email">
+                                <input type="text" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email', $User->email) }}" placeholder="email">
                             
                                 <!-- error message untuk title -->
                                 @error('email')
@@ -56,7 +56,7 @@
 
                             <div class="form-group">
                                 <label class="font-weight-bold">password</label>
-                                <input type="text" class="form-control @error('password') is-invalid @enderror" name="password" value="{{ old('password', $user->password) }}" placeholder="email">
+                                <input type="text" class="form-control @error('password') is-invalid @enderror" name="password" value="{{ old('password', $User->password) }}" placeholder="email">
                             
                                 <!-- error message untuk title -->
                                 @error('password')
@@ -68,7 +68,7 @@
 
                             <div class="form-group">
                                 <label class="font-weight-bold">status_user</label>
-                                <input type="text" class="form-control @error('status_user') is-invalid @enderror" name="status_user" value="{{ old('status_user', $user->status_user) }}" placeholder="status_user">
+                                <input type="text" class="form-control @error('status_user') is-invalid @enderror" name="status_user" value="{{ old('status_user', $User->status_user) }}" placeholder="status_user">
                             
                                 <!-- error message untuk title -->
                                 @error('status_user')

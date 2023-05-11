@@ -25,7 +25,7 @@ class UserController extends Controller
         $User = user::latest()->paginate(5);
 
         //render view with posts
-        return view('user.index', compact('user'));
+        return view('user.index', compact('User'));
     }
 
     public function edit(string $id): View
@@ -34,7 +34,7 @@ class UserController extends Controller
         $User = user::findOrFail($id);
 
         //render view with post
-        return view('user.edit', compact('user'));
+        return view('user.edit', compact('User'));
     }
     
     /**
