@@ -46,8 +46,8 @@
     @endauth
 
     @guest
-    <h1>Homepage</h1>
-    <p class="lead">Your viewing the home page. Please login to view the restricted data.</p>
+    <h1>Layanan Koperasi Mahasiswa</h1>
+    <p class="lead">Register atau Login untuk menampilkan homepage Layanan Koperasi Mahasiswa.</p>
     @endguest
 </div>
 
