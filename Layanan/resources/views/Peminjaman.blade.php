@@ -1,3 +1,4 @@
+@include('layouts.app-master')
 <!DOCTYPE html>
 <html lang="en">
 <head>
