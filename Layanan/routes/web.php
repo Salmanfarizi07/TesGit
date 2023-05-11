@@ -56,6 +56,14 @@ Route::get('/tambahJasa', function () {
     return view('tambahJasa');
 });
 
+Route::get('/simpanan', function () {
+    return view('simpanan');
+});
+
+Route::get('/tambahsimpanan', function () {
+    return view('tambahsimpanan');
+});
+
 Route::get('/Surat', 'App\Http\Controllers\SuratController@index');
 Route::get('/Surat/tambah','App\Http\Controllers\SuratController@tambah');
 Route::post('/Surat/store','App\Http\Controllers\SuratController@store');
