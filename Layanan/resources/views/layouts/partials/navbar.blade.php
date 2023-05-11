@@ -9,7 +9,11 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#">Homepage</a>
             <a href="#">Admin</a>
+            <a href="#">Simpanan</a>
             <a href="#">Pembayaran</a>
+            <a href="#">Peminjaman</a>
+            <a href="#">Pengajuan</a>
+            <a href="#">Surat</a>
       </div>
           <nav class="topnav">
             <a href="#" onclick="openNav()">
