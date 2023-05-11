@@ -1,3 +1,4 @@
+@include('layouts.partials.navbar')
 <!DOCTYPE html>
 <html lang="en">
 <head>
