@@ -99,12 +99,12 @@ Route::get('/Jasa/edit/{Id_Jasa}','App\Http\Controllers\JasaController@edit');
 Route::post('/Jasa/update','App\Http\Controllers\JasaController@update');
 Route::get('/Jasa/hapus/{Id_Jasa}','App\Http\Controllers\JasaController@hapus');
 
-Route::get('/simpanan','SimpananController@simpanan');
-Route::get('/simpanan/tambah','SimpananController@tambahsimpanan');
-Route::post('/simpanan/input','SimpananController@input');
-Route::get('/simpanan/edit/{id}','SimpananController@editsimpanan');
-Route::post('/simpanan/update','SimpananController@update');
-Route::get('/simpanan/hapus/{id}','SimpananController@hapus');
+Route::get('/simpanan','App\Http\Controllers\SimpananController@simpanan');
+Route::get('/simpanan/tambah','App\Http\Controllers\SimpananController@tambahsimpanan');
+Route::post('/simpanan/input','App\Http\Controllers\SimpananController@input');
+Route::get('/simpanan/edit/{id}','App\Http\Controllers\SimpananController@editsimpanan');
+Route::post('/simpanan/update','App\Http\Controllers\SimpananController@update');
+Route::get('/simpanan/hapus/{id}','App\Http\Controllers\SimpananController@hapus');
 
 Route::group(['namespace' => 'App\Http\Controllers'], function()
 {   
