@@ -11,6 +11,7 @@
 <form action="/Surat/update" method="post">
 	{{ csrf_field() }}
 	
+    <input type="hidden" name="Id_Surat" value="{{ $p->Id_Surat }}"> <br/>
 	Jenis_Surat <input type="text" required="required" name="Jenis_Surat" value="{{ $p->Jenis_Surat }}"> <br/>
 	Desc_Surat <input type="text" required="required" name="Desc_Surat" value="{{ $p->Desc_Surat }}"> <br/>
 	Jenis_Tabungan <input type="text" required="required" name="Jenis_Tabungan" value="{{ $p->Jenis_Tabungan }}"> <br/>

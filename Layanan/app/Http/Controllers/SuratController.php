@@ -32,7 +32,7 @@ class SuratController extends Controller
     {
         // insert data ke table Surat
         DB::table('Surat')->insert([
-            'Id_Surat' => $request->Id_Surat,
+            //'Id_Surat' => $request->Id_Surat,
             'Jenis_Surat' => $request->Jenis_Surat,
             'Desc_Surat' => $request->Desc_Surat,
             'Jenis_Tabungan' => $request->Jenis_Tabungan,

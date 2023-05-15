@@ -32,7 +32,7 @@ class SuratController extends Controller
     {
         // insert data ke table Surat
         DB::table('Surat')->insert([
-            'Id_Surat' => $request->Id_Surat,
+            //'Id_Surat' => $request->Id_Surat,
             'Jenis_Surat' => $request->Jenis_Surat,
             'Desc_Surat' => $request->Desc_Surat,
             'Jenis_Tabungan' => $request->Jenis_Tabungan,
@@ -59,11 +59,11 @@ class SuratController extends Controller
     {
         // update data Surat
         DB::table('Surat')->where('Id_Surat',$request->Id_Surat)->update([
-            'Surat_Jenis_Surat' => $request->Jenis_Surat,
-            'Surat_Desc_Surat' => $request->Desc_Surat,
-            'Surat_Jenis_Tabungan' => $request->Jenis_Tabungan,
-            'Surat_Jenis_Simpanan' => $request->Jenis_Simpanan,
-            'Surat_Status' => $request->Status,
+            'Jenis_Surat' => $request->Jenis_Surat,
+            'Desc_Surat' => $request->Desc_Surat,
+            'Jenis_Tabungan' => $request->Jenis_Tabungan,
+            'Jenis_Simpanan' => $request->Jenis_Simpanan,
+            'Status' => $request->Status,
         ]);
         // alihkan halaman ke halaman Surat
         return redirect('/Surat');
