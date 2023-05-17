@@ -28,7 +28,7 @@
                     </style>
 
                     <div class="btn-row">
-                    <a href="/Ladmin" class="btn btn-primary btn-custom">Admin</a>
+                        <a href="/Ladmin" class="btn btn-primary btn-custom">Admin</a>
                         <a href="/simpanan" class="btn btn-primary btn-custom">Simpanan</a>
                         <a href="/Pembayaran" class="btn btn-primary btn-custom">Pembayaran</a>
                     </div>
