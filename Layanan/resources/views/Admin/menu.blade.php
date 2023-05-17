@@ -1,9 +1,8 @@
-@extends('layouts.app-master')
+@include('layouts.app-master')
 
 @section('content')
 <div class="bg-light p-5 rounded">
-    @auth
-    <div class="jumbotron jumbotron-fluid mb-5">
+<div class="jumbotron jumbotron-fluid mb-5">
         <div class="container">
             <h1 class="display-4">Layanan Koperasi Mahasiswa</h1>
             <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
@@ -28,7 +27,7 @@
                     </style>
 
                     <div class="btn-row">
-                    <a href="/Ladmin" class="btn btn-primary btn-custom">Admin</a>
+                        <a href="{{ route('user.index') }}" class="btn btn-primary btn-custom">User</a>
                         <a href="/simpanan" class="btn btn-primary btn-custom">Simpanan</a>
                         <a href="/Pembayaran" class="btn btn-primary btn-custom">Pembayaran</a>
                     </div>
@@ -42,13 +41,3 @@
             </div>
         </div>
     </div>
-
-    @endauth
-
-    @guest
-    <h1>Layanan Koperasi Mahasiswa</h1>
-    <p class="lead">Register atau Login untuk menampilkan homepage Layanan Koperasi Mahasiswa.</p>
-    @endguest
-</div>
-
-@endsection
