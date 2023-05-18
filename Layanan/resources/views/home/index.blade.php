@@ -27,12 +27,12 @@
                         }
                     </style>
 
-                    <div class="btn-row">
+                    <div class="homepage-btn-row">
                         <a href="/Ladmin" class="btn btn-primary btn-custom">Admin</a>
                         <a href="/simpanan" class="btn btn-primary btn-custom">Simpanan</a>
                         <a href="/Pembayaran" class="btn btn-primary btn-custom">Pembayaran</a>
                     </div>
-                    <div class="btn-row">
+                    <div class="homepage-btn-row">
                         <a href="/Peminjaman" class="btn btn-primary btn-custom">Peminjaman</a>
                         <a href="/Jasa" class="btn btn-primary btn-custom">Pengajuan</a>
                         <a href="/Surat" class="btn btn-primary btn-custom">Surat</a>

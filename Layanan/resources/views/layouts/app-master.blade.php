@@ -26,13 +26,13 @@
         }
       }
 
-      .btn-custom {
+      .homepage-btn-custom {
         font-size: 24px;
         padding: 12px 24px;
-        margin-right: 10px;
+        margin-right: 40px;
         margin-bottom: 10px;
       }
-      .btn-row {
+      .homepage-btn-row {
           display: flex;
           justify-content: center;
       }
