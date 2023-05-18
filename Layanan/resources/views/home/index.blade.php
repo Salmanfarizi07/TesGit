@@ -14,30 +14,15 @@
         <div class="container">
             <div class="container text-center">
                 <div class="text-center">
-                    <style>
-                        .btn-custom {
-                            font-size: 24px;
-                            padding: 12px 24px;
-                            margin-right: 10px;
-                            margin-bottom: 10px;
-                        }
-                        .btn-row {
-                            display: flex;
-                            justify-content: center;
-                        }
-                    </style>
-
-                    <div class="btn-row">
-                        <a href="/Ladmin" class="btn btn-primary btn-custom">Admin</a>
-                        <a href="/simpanan" class="btn btn-primary btn-custom">Simpanan</a>
-                        <a href="/Pembayaran" class="btn btn-primary btn-custom">Pembayaran</a>
+                <div class="homepage-btn-custom">
+                        <a href="/Ladmin" class="btn btn-primary homepage-btn">Admin</a>
+                        <a href="/Lsimpanan" class="btn btn-primary homepage-btn">Simpanan</a>
+                        <a href="/Pembayaran" class="btn btn-primary homepage-btn">Pembayaran</a>
                     </div>
-                    <div class="btn-row">
-                        <a href="/Peminjaman" class="btn btn-primary btn-custom">Peminjaman</a>
-                        <a href="/Jasa" class="btn btn-primary btn-custom">Pengajuan</a>
-                        <a href="/Surat" class="btn btn-primary btn-custom">Surat</a>
-                        
-                    </div>
+                    <div class="homepage-btn-row">
+                        <a href="/Peminjaman" class="btn btn-primary homepage-btn">Peminjaman</a>
+                        <a href="/Jasa" class="btn btn-primary homepage-btn">Pengajuan</a>
+                        <a href="/Surat" class="btn btn-primary homepage-btn">Surat</a>
                 </div>
             </div>
         </div>
