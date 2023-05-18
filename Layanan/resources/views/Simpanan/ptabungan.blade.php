@@ -15,8 +15,8 @@
                 <div class="text-center">
 
                     <div class="menu-btn-custom">
-                        <a href="/Ptabungan" class="btn btn-primary menu-btn">Tabungan</a>
-                        <a href="/simpanan" class="btn btn-primary menu-btn">Saham</a>
+                        <a href="/daftar-t-sarjana" class="btn btn-primary menu-btn">Tabungan Sarjana</a>
+                        <a href="/simpanan" class="btn btn-primary menu-btn">Tabungan Semester</a>
                     </div>
                 </div>
             </div>

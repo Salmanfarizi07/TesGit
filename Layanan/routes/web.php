@@ -138,6 +138,9 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
 
     Route::get('/Ladmin', 'LadminController@index');
 
+    //view anggota layanan simpanan
     Route::get('/Lsimpanan', 'SimpananControllers\LsimpananController@index');
+    Route::get('/Ptabungan', 'SimpananControllers\PtabunganController@index');
+    Route::get('/daftar-t-sarjana', 'SimpananControllers\DTsarjanaController@index');
     
 });
