@@ -138,6 +138,6 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
 
     Route::get('/Ladmin', 'LadminController@index');
 
-    Route::get('/Lsimpanan', 'SimpananControllers\LSimpananController@index');
+    Route::get('/Lsimpanan', 'SimpananControllers\LsimpananController@index');
     
 });
