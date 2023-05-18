@@ -25,6 +25,18 @@
           font-size: 3.5rem;
         }
       }
+
+      .btn-custom {
+        font-size: 24px;
+        padding: 12px 24px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+      .btn-row {
+          display: flex;
+          justify-content: center;
+      }
+
       .navbar-brand {
         color: #fff;
         font-size: 26px;
