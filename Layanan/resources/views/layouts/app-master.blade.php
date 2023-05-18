@@ -25,6 +25,77 @@
           font-size: 3.5rem;
         }
       }
+
+      .homepage-btn-custom {
+        font-size: 100px;
+        padding: 20px 24px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .homepage-btn {
+        font-size: 24px;
+        padding: 30px 70px;
+        margin-right: 10px; 
+        margin-bottom: 10px;
+      }
+      .homepage-btn-custom a {
+        flex: 1;
+        margin: 10px;
+      }
+
+      .homepage-btn-row {
+          
+          font-size: 100px;
+          padding: 20px 24px;
+          margin-right: 20px;
+          margin-bottom: 10px;
+          line-height: 1;
+          display: flex;
+          justify-content: center;
+      }
+
+        .homepage-btn-row a {
+          margin: 10px;
+          flex: 1;
+
+      }
+
+      .homepage-btn-row .btn-custom:not(:last-child) {
+                            margin-right: 50px;
+      }
+
+      .homepage-btn-custom .btn-custom:not(:last-child) {
+                            margin-right: 50px;
+      }
+      
+      .menu-btn-custom {
+        font-size: 100px;
+        padding: 20px 100px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .menu-btn {
+        font-size: 30px;
+        padding: 60px 100px;
+        margin-right: 10px; 
+        margin-bottom: 10px;
+      }
+      .menu-btn-custom a {
+        flex: 1;
+        margin: 10px;
+      }
+
+
       .navbar-brand {
         color: #fff;
         font-size: 26px;
