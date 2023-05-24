@@ -43,7 +43,7 @@ class PengajuanController extends Controller
     public function editpengajuan($id)
     {
         // mengambil data pengajuan berdasarkan id yang dipilih
-        $simpanan = DB::table('pengajuan')->where('id_pengajuan',$id)->get();
+        $pengajuan = DB::table('pengajuan')->where('id_pengajuan',$id)->get();
         // passing data pengajuan yang didapat ke view edit.blade.php
         return view('editpengajuan',['pengajuan' => $pengajuan]);
     }
