@@ -13,5 +13,15 @@ class LsimpananController extends Controller
             return view('Simpanan.menu');
     }
 
+    public function ptabungan()
+    {
+            return view('Simpanan.ptabungan');
+    }
+
+    public function dtsarjana()
+    {
+            return view('Simpanan.daftar-t-sarjana');
+    }
+
     
 }
