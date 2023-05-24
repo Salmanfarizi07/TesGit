@@ -10,7 +10,7 @@ class PengajuanController extends Controller
     public function pengajuan()
     {
         // mengambil data dari table pengajuan
-        $simpanan = DB::table('pengajuan')->get();
+        $pengajuan = DB::table('pengajuan')->get();
  
         // mengirim data pengajuan ke view index
         return view('pengajuan',['pengajuan' => $pengajuan]);
