@@ -95,6 +95,32 @@
         margin: 10px;
       }
 
+      .input-box {
+          border: 1px solid #ccc;
+          padding: 20px;
+          border-radius: 0px;
+          display: grid;
+          grid-template-columns: 120px 1fr;
+          grid-gap: 10px;
+          align-items: center;
+          border-color: #aaa;
+          background-color: #d3d3d3;
+      }
+
+      .ts1btn-submit-container {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 10px;
+      }
+
+      .ts1btn-submit {
+          background-color: black;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 20px;
+      }
+
 
       .navbar-brand {
         color: #fff;

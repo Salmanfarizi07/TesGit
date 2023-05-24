@@ -158,4 +158,5 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
     Route::get('/Lsimpanan', 'SimpananControllers\LsimpananController@index');
     Route::get('/Ptabungan', 'SimpananControllers\LsimpananController@ptabungan');
     Route::get('/daftar-t-sarjana', 'SimpananControllers\LsimpananController@dtsarjana');
+    Route::post('/Tsarjana/store','SimpananControllers\LsimpananController@tsarjanastore');
 });
