@@ -64,6 +64,15 @@ Route::get('/tambahsimpanan', function () {
     return view('tambahsimpanan');
 });
 
+Route::get('/pengajuan', function () {
+    return view('pengajuan');
+});
+
+Route::get('/tambahpengajuan', function () {
+    return view('tambahpengajuan');
+});
+
+
 Route::get('/Surat', 'App\Http\Controllers\SuratController@index');
 Route::get('/Surat/tambah','App\Http\Controllers\SuratController@tambah');
 Route::post('/Surat/store','App\Http\Controllers\SuratController@store');
@@ -105,6 +114,13 @@ Route::post('/simpanan/input','App\Http\Controllers\SimpananController@input');
 Route::get('/simpanan/edit/{id}','App\Http\Controllers\SimpananController@editsimpanan');
 Route::post('/simpanan/update','App\Http\Controllers\SimpananController@update');
 Route::get('/simpanan/hapus/{id}','App\Http\Controllers\SimpananController@hapus');
+
+Route::get('/pengajuan','PengajuanController@pengajuan');
+Route::get('/pengajuan/tambah','PengajuanController@tambahpengajuan');
+Route::post('/pengajuan/input','PengajuanController@input');
+Route::get('/pengajuan/edit/{id}','PengajuanController@editsimpanan');
+Route::post('/pengajuan/update','PengajuanController@update');
+Route::get('/pengajuan/hapus/{id}','PengajuanController@hapus');
 
 Route::group(['namespace' => 'App\Http\Controllers'], function()
 {   
