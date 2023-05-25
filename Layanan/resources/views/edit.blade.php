@@ -1,3 +1,4 @@
+@include('layouts.app-master')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +9,32 @@
 </head>
 <body>
 @foreach($Surat as $p)
+    <h2 class="judul"> Edit Data </h2>
+    <a href="/Surat" class="kembali">Kembali</a>
 <form action="/Surat/update" method="post">
 	{{ csrf_field() }}
-	<input type="hidden" name="Id_Surat" value="{{ $p->Id_Surat }}"> <br/>
-	Jenis_Surat <input type="text" required="required" name="Jenis_Surat" value="{{ $p->Jenis_Surat }}"> <br/>
-	Desc_Surat <input type="text" required="required" name="Desc_Surat" value="{{ $p->Desc_Surat }}"> <br/>
-	Jenis_Tabungan <input type="text" required="required" name="Jenis_Tabungan" value="{{ $p->Jenis_Tabungan }}"> <br/>
-	Jenis_Simpanan <input type="text" required="required" name="Jenis_Simpanan" value="{{ $p->Jenis_Simpanan }}"> <br/>
-    Status <input type="text" required="required" name="Status" value="{{ $p->Status }}"> <br/>
-	<input type="submit" value="Simpan Data">
+    <div class="form-group">
+		<label for="jenis_surat">Jenis</label>
+		<input type="text" required="required" name="Jenis_Surat" id="jenis_surat" value="{{ $p->Jenis_Surat}}">
+	</div>
+	<div class="form-group">
+		<label for="Desc_surat">Deskripsi</label>
+		<input type="text" required="required" name="Desc_surat" id="Desc_surat" value="{{ $p->Desc_Surat}}">
+	</div>
+	<div class="form-group">
+		<label for="Jenis_tabungan">Jenis Tabungan</label>
+		<input type="text" required="required" name="Jenis_tabungan" id="Jenis_tabungan" value="{{ $p->Jenis_Tabungan}}">
+	</div>
+    <div class="form-group">
+		<label for="Jenis_simpanan">Jenis Simpanan</label>
+		<input type="text" required="required" name="Jenis_simpanan" id="Jenis_simpanan" value="{{ $p->Jenis_Simpanan}}">
+	</div>
+    <div class="form-group">
+		<label for="Status">Status</label>
+		<input type="text" required="required" name="Status" id="Status" value="{{ $p->Status}}">
+	</div>
+	<input type="hidden" name="Id_Surat" value="{{ $p->Id_Surat}}"> <br/>
+	<input type="submit" value="Simpan Data"class="Simpan">
 </form>
 @endforeach
 </body>
