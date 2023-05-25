@@ -1,16 +1,16 @@
 @include('layouts.app-master')
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Peminjaman</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
- 
-	<h3>Daftar Peminjaman</h3>
-
-	<br/>
-	<br/>
-
+<h3 class="h3">
+	Pembayaran
+	</h3>
 <table border="1" class="tabel">
 		<tr>
 		<th>Id_Peminjaman</th>
