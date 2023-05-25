@@ -14,19 +14,19 @@
                     <form action="/Tsarjana/store" method="post">
                         {{ csrf_field() }}
 
-                        <div class="form-group">
+                        <div class="ts1form-group">
                             <div class="input-box">
                                 <label for="id_user">Id User:</label>
                                 <input type="text" name="id_user" id="id_user" required="required" class="form-control">
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="ts1form-group">
                             <div class="input-box">
                                 <label for="paket">Pilih Paket:</label>
                                 <input type="text" name="paket" id="paket" required="required" class="form-control">
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="ts1form-group">
                             <div class="input-box">
                                 <label for="tgl_awal">Tanggal:</label>
                                 <input type="text" name="tgl_awal" id="tgl_awal" required="required" class="form-control">
