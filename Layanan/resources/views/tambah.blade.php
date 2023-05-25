@@ -13,19 +13,19 @@
     <form action="/Surat/store" method="post">
         {{ csrf_field() }}
         <div class="form-group">
-            <label for="Jenis_Surat">Jenis_Surat</label>
+            <label for="Jenis_Surat">Jenis</label>
             <input type="text" name="Jenis_Surat" required="required">
         </div>
         <div class="form-group">
-            <label for="Desc_Surat">Desc_Surat</label>
-            <input type="text" name="Desc_surat" required="required">
+            <label for="Desc_Surat">Deskripsi</label>
+            <input type="text" name="Desc_Surat" required="required">
         </div>
         <div class="form-group">
-            <label for="Jenis_Tabungan">Jenis_Tabungan</label>
+            <label for="Jenis_Tabungan">Jenis Tabungan</label>
             <input type="text" name="Jenis_Tabungan" required="required">
         </div>
         <div class="form-group">
-            <label for="Jenis_Simpanan">Jenis_Simpanan</label>
+            <label for="Jenis_Simpanan">Jenis Simpanan</label>
             <input type="text" name="Jenis_Simpanan" required="required">
         </div>
         <div class="form-group">
