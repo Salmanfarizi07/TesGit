@@ -8,17 +8,31 @@
     <title>Document</title>
 </head>
 <body>
-<form action="/Peminjaman/store" method="post">
-		{{ csrf_field() }}
-
-		<!--Id_Peminjaman <input type="text" name="Jenis_Peminjaman" required="required"> <br/>
-		Id_User <input type="text" name="Desc_PPeminjaman" required="required"> <br/>-->
-		Jenis_Peminjaman <input type="text" name="Jenis_Peminjaman" required="required"> <br/>
-        Desc_Peminjaman <input type="text" name="Desc_Peminjaman" required="required"> <br/>
-        Tanggal_Peminjaman <input type="text" name="Tanggal_Peminjaman" required="required"> <br/>
-        Jumlah_Peminjaman <input type="text" name="Jumlah_Peminjaman" required="required"> <br/>
-        Status_Pembayaran <input type="text" name="Status_Pembayaran" required="required"> <br/>
-		<input type="submit" value="Simpan Data">
+<h2 class="judul">Tambah Peminjaman</h2>
+    <a href="/Peminjaman" class="kembali">Kembali</a>
+    <form action="/Peminjaman/store" method="post">
+        {{ csrf_field() }}
+        <div class="form-group">
+            <label for="jenis_peminajman">Jenis_Peminjaman</label>
+            <input type="text" name="Jenis_Peminjaman" required="required">
+        </div>
+        <div class="form-group">
+            <label for="Desc_peminjaman">Desc_Peminjaman</label>
+            <input type="text" name="Desc_peminjaman" required="required">
+        </div>
+        <div class="form-group">
+            <label for="Tanggal_peminjaman">Tanggal_Peminjaman</label>
+            <input type="text" name="Tanggal_peminjaman" required="required">
+        </div>
+        <div class="form-group">
+            <label for="Jumlah_Peminjaman">Jumlah_Peminjaman</label>
+            <input type="text" name="Jumlah_Peminjaman" required="required">
+        </div>
+        <div class="form-group">
+            <label for="Status_Peminjaman">Status_Pembayaran</label>
+            <input type="text" name="Status_Peminjaman" required="required">
+        </div>
+        <input type="submit" value="Simpan Data" class="simpan">
 	</form>
 </body>
 </html>

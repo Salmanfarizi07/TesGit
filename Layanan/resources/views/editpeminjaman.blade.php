@@ -9,15 +9,32 @@
 </head>
 <body>
 @foreach($Peminjaman as $p)
+    <h2 class="judul"> Edit Peminjaman </h2>
+    <a href="/Peminjaman" class="kembali">Kembali</a>
 <form action="/Peminjaman/update" method="post">
 	{{ csrf_field() }}
+    <div class="form-group">
+		<label for="jenis_peminjaman">Jenis_Peminjaman</label>
+		<input type="text" required="required" name="Jenis_Peminjaman" id="jenis_peminjaman" value="{{ $p->Jenis_Pembayaran }}">
+	</div>
+	<div class="form-group">
+		<label for="Desc_peminjaman">Desc_peminjaman</label>
+		<input type="text" required="required" name="Desc_peminjaman" id="Desc_peminjaman" value="{{ $p->Metode_Pembayaran }}">
+	</div>
+	<div class="form-group">
+		<label for="Tanggal_peminjaman">Tanggal_Peminjaman</label>
+		<input type="text" required="required" name="Tanggal_peminjaman" id="Tanggal_peminjaman" value="{{ $p->Status_Pembayaran }}">
+	</div>
+    <div class="form-group">
+		<label for="Jumlah_Peminjaman">Jumlah_Peminjaman</label>
+		<input type="text" required="required" name="Jumlah_Peminjaman" id="Jumlah_Peminjaman" value="{{ $p->Status_Pembayaran }}">
+	</div>
+    <div class="form-group">
+		<label for="Status_Peminjaman">Status_Peminjaman</label>
+		<input type="text" required="required" name="Status_Peminjaman" id="Status_Peminjaman" value="{{ $p->Status_Pembayaran }}">
+	</div>
 	<input type="hidden" name="Id_Peminjaman" value="{{ $p->Id_Peminjaman }}"> <br/>
-	Jenis_Peminjaman <input type="text" required="required" name="Jenis_Peminjaman" value="{{ $p->Jenis_Peminjaman }}"> <br/>
-	Desc_Peminjaman <input type="text" required="required" name="Desc_Peminjaman" value="{{ $p->Desc_Peminjaman }}"> <br/>
-    Tanggal_Peminjaman <input type="text" required="required" name="Tanggal_Peminjaman" value="{{ $p->Taggal_Peminjaman }}"> <br/>
-    Jumlah_Peminjaman <input type="text" required="required" name="Jumlah_Peminjaman" value="{{ $p->Jumlah_Peminjaman }}"> <br/>
-    Status_Peminjaman <input type="text" required="required" name="Status_Peminjaman" value="{{ $p->Status_Peminjaman }}"> <br/>
-	<input type="submit" value="Simpan Data">
+	<input type="submit" value="Simpan Data"class="Simpan">
 </form>
 @endforeach
 </body>
