@@ -14,7 +14,7 @@
 <form action="/Peminjaman/update" method="post">
 	{{ csrf_field() }}
 	<div class="form-group">
-		<label for="jenis_peminjaman">jenis_peminjaman</label>
+		<label for="jenis_peminjaman">Jenis_peminjaman</label>
 		<input type="text" required="required" name="jenis_peminjaman" id="jenis_peminjaman" value="{{ $p->jenis_peminjaman }}">
 	</div>
 	<div class="form-group">
@@ -30,8 +30,8 @@
 		<input type="text" required="required" name="Jumlah_Peminjaman" id="Jumlah_Peminjaman" value="{{ $p->Jumlah_Peminjaman }}">
 	</div>
     <div class="form-group">
-		<label for="Status_Peminjaman ">Status_Peminjaman</label>
-		<input type="text" required="required" name="Status_Peminjaman" id="Status_Peminjaman" value="{{ $p->Status_Peminjaman }}">
+		<label for="Status_Pembayaran ">Status_Peminjaman</label>
+		<input type="text" required="required" name="Status_Pembayaran" id="Status_Pembayaran" value="{{ $p->Status_Pembayaran }}">
 	</div>
 	<input type="hidden" name="Id_Peminjaman" value="{{ $p->Id_Peminjaman }}"> <br/>
 	<input type="submit" value="Simpan Data" class="simpan">

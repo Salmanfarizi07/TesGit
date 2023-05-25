@@ -30,7 +30,7 @@
         </div>
         <div class="form-group">
             <label for="Status_Peminjaman">Status_Pembayaran</label>
-            <input type="text" name="Status_Peminjaman" required="required">
+            <input type="text" name="Status_Pembayaran" required="required">
         </div>
         <input type="submit" value="Simpan Data" class="simpan">
 	</form>
