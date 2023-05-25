@@ -14,7 +14,7 @@
 <form action="/Surat/update" method="post">
 	{{ csrf_field() }}
     <div class="form-group">
-		<label for="jenis_surat">Jenis</label>
+		<label for="jenis_surat">Jenis Surat</label>
 		<input type="text" required="required" name="Jenis_Surat" id="jenis_surat" value="{{ $p->Jenis_Surat}}">
 	</div>
 	<div class="form-group">
@@ -34,7 +34,7 @@
 		<input type="text" required="required" name="Status" id="Status" value="{{ $p->Status}}">
 	</div>
 	<input type="hidden" name="Id_Surat" value="{{ $p->Id_Surat}}"> <br/>
-	<input type="submit" value="Simpan Data"class="Simpan">
+	<input type="submit" value="Simpan Data"class="simpan">
 </form>
 @endforeach
 </body>
