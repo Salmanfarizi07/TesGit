@@ -8,33 +8,33 @@
     <title>Document</title>
 </head>
 <body>
-	<h2 class="judul"> Edit Peminjaman </h2>
+    <h2 class="judul"> Edit Peminjaman </h2>
     <a href="/Peminjaman" class="kembali">Kembali</a>
-@foreach($Peminjaman as $p)
+@foreach($Jasa as $p)
 <form action="/Peminjaman/update" method="post">
 	{{ csrf_field() }}
-    <div class="form-group">
-		<label for="jenis_peminjaman">jenis_Peminjaman</label>
-		<input type="text" required="required" name="Jenis_Peminjaman" id="jenis_peminjaman" value="{{ $p->Jenis_Peminjaman }}">
+	<div class="form-group">
+		<label for="jenis_peminjaman">jenis_peminjaman</label>
+		<input type="text" required="required" name="jenis_peminjaman" id="jenis_peminjaman" value="{{ $p->jenis_peminjaman }}">
 	</div>
 	<div class="form-group">
 		<label for="Desc_peminjaman">Desc_peminjaman</label>
-		<input type="text" required="required" name="Desc_peminjaman" id="Desc_peminjaman" value="{{ $p->Desc_Peminjaman }}">
+		<input type="text" required="required" name="Desc_peminjaman" id="Desc_peminjaman" value="{{ $p->Desc_peminjaman }}">
 	</div>
 	<div class="form-group">
-		<label for="Tanggal_peminjaman">Tanggal_Peminjaman</label>
-		<input type="text" required="required" name="Tanggal_peminjaman" id="Tanggal_peminjaman" value="{{ $p->Tanggal_Peminjaman }}">
+		<label for="Tanggal_peminjaman ">Tanggal_Peminjaman</label>
+		<input type="text" required="required" name="Tanggal_peminjaman" id="Tanggal_peminjaman" value="{{ $p->Tanggal_peminjaman }}">
 	</div>
     <div class="form-group">
-		<label for="Jumlah_Peminjaman">Jumlah_Peminjaman</label>
+		<label for="Jumlah_Peminjaman ">Jumlah_Peminjaman</label>
 		<input type="text" required="required" name="Jumlah_Peminjaman" id="Jumlah_Peminjaman" value="{{ $p->Jumlah_Peminjaman }}">
 	</div>
     <div class="form-group">
-		<label for="Status_Peminjaman">Status_Peminjaman</label>
+		<label for="Status_Peminjaman ">Status_Peminjaman</label>
 		<input type="text" required="required" name="Status_Peminjaman" id="Status_Peminjaman" value="{{ $p->Status_Peminjaman }}">
 	</div>
 	<input type="hidden" name="Id_Peminjaman" value="{{ $p->Id_Peminjaman }}"> <br/>
-	<input type="submit" value="Simpan Data"class="Simpan">
+	<input type="submit" value="Simpan Data" class="simpan">
 </form>
 @endforeach
 </body>
