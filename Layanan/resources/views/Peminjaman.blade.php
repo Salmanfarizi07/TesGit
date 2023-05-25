@@ -1,16 +1,19 @@
 @include('layouts.app-master')
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<title>Peminjaman</title>
 </head>
 <body>
-	<h3 class="h3">
-	Peminjaman
-	</h3>
+ 
+	<h2>Sistem Layanan</h2>
+	<h3>Daftar Peminjaman</h3>
+
+ 	<a href="/pinjaman/tambah"> + Tambah pinjaman Baru</a>
+
+	<br/>
+	<br/>
+
 <table border="1" class="tabel">
 		<tr>
 		<th>Id_Peminjaman</th>

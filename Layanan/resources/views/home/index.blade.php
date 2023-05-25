@@ -34,7 +34,7 @@
 
     @guest
     <h1>Layanan Koperasi Mahasiswa</h1>
-    <p class="lead">Register atau Login untuk menampilkan homepage Layanan Koperasi Mahasiswa.</p>
+    <p class="lead">Register atau Login untuk Masuk di Halaman Layanan Koperasi Mahasiswa.</p>
     @endguest
 </div>
 
