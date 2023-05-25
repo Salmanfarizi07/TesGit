@@ -11,6 +11,7 @@
 	<h3 class="h3">
 	Surat
 	</h3>
+<a href="/" class="kembali">Kembali</a>
 <table border="1" class="tabel">
 		<tr>
 			<th>Id_Surat</th>
