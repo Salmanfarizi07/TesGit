@@ -15,23 +15,23 @@
 	{{ csrf_field() }}
     <div class="form-group">
 		<label for="jenis_peminjaman">Jenis_Peminjaman</label>
-		<input type="text" required="required" name="Jenis_Peminjaman" id="jenis_peminjaman" value="{{ $p->Jenis_Pembayaran }}">
+		<input type="text" required="required" name="Jenis_Peminjaman" id="jenis_peminjaman" value="{{ $p->Jenis_Peminjaman }}">
 	</div>
 	<div class="form-group">
 		<label for="Desc_peminjaman">Desc_peminjaman</label>
-		<input type="text" required="required" name="Desc_peminjaman" id="Desc_peminjaman" value="{{ $p->Metode_Pembayaran }}">
+		<input type="text" required="required" name="Desc_peminjaman" id="Desc_peminjaman" value="{{ $p->Metode_Peminjaman }}">
 	</div>
 	<div class="form-group">
 		<label for="Tanggal_peminjaman">Tanggal_Peminjaman</label>
-		<input type="text" required="required" name="Tanggal_peminjaman" id="Tanggal_peminjaman" value="{{ $p->Status_Pembayaran }}">
+		<input type="text" required="required" name="Tanggal_peminjaman" id="Tanggal_peminjaman" value="{{ $p->Status_Peminjaman }}">
 	</div>
     <div class="form-group">
 		<label for="Jumlah_Peminjaman">Jumlah_Peminjaman</label>
-		<input type="text" required="required" name="Jumlah_Peminjaman" id="Jumlah_Peminjaman" value="{{ $p->Status_Pembayaran }}">
+		<input type="text" required="required" name="Jumlah_Peminjaman" id="Jumlah_Peminjaman" value="{{ $p->Status_Peminjaman }}">
 	</div>
     <div class="form-group">
 		<label for="Status_Peminjaman">Status_Peminjaman</label>
-		<input type="text" required="required" name="Status_Peminjaman" id="Status_Peminjaman" value="{{ $p->Status_Pembayaran }}">
+		<input type="text" required="required" name="Status_Peminjaman" id="Status_Peminjaman" value="{{ $p->Status_Peminjaman }}">
 	</div>
 	<input type="hidden" name="Id_Peminjaman" value="{{ $p->Id_Peminjaman }}"> <br/>
 	<input type="submit" value="Simpan Data"class="Simpan">
