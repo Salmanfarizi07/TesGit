@@ -161,6 +161,63 @@
           font-size: 36px;
           margin-left: 50px;
       }
+
+      .judul {
+        margin-left: 30px;
+        margin-top: 20px;
+      }
+
+      .kembali {
+        background-color: #91c495;
+        border: none;
+        color: white;
+        padding: 5px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+      }
+      
+      .kembali:hover {
+        background-color: #6f9d7f;
+      }
+
+      .simpan {
+        background-color: #91c495;
+        border: none;
+        color: white;
+        padding: 5px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 5px;
+        margin-left: 30px;
+      }
+  
+      .form-group {
+    margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: inline-block;
+        width: 150px;
+        padding-left: 30px;
+    }
+    
+    .form-group input[type="text"] {
+        width: 300px;
+        margin-left: 80px;
+    }
+
+
     </style>
 
     
