@@ -19,15 +19,15 @@
 	</div>
 	<div class="form-group">
 		<label for="Desc_peminjaman">Desc_peminjaman</label>
-		<input type="text" required="required" name="Desc_peminjaman" id="Desc_peminjaman" value="{{ $p->Metode_Peminjaman }}">
+		<input type="text" required="required" name="Desc_peminjaman" id="Desc_peminjaman" value="{{ $p->Desc_Peminjaman }}">
 	</div>
 	<div class="form-group">
 		<label for="Tanggal_peminjaman">Tanggal_Peminjaman</label>
-		<input type="text" required="required" name="Tanggal_peminjaman" id="Tanggal_peminjaman" value="{{ $p->Status_Peminjaman }}">
+		<input type="text" required="required" name="Tanggal_peminjaman" id="Tanggal_peminjaman" value="{{ $p->Tanggal_Peminjaman }}">
 	</div>
     <div class="form-group">
 		<label for="Jumlah_Peminjaman">Jumlah_Peminjaman</label>
-		<input type="text" required="required" name="Jumlah_Peminjaman" id="Jumlah_Peminjaman" value="{{ $p->Status_Peminjaman }}">
+		<input type="text" required="required" name="Jumlah_Peminjaman" id="Jumlah_Peminjaman" value="{{ $p->Jumlah_Peminjaman }}">
 	</div>
     <div class="form-group">
 		<label for="Status_Peminjaman">Status_Peminjaman</label>
