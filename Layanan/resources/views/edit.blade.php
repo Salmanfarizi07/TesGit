@@ -27,7 +27,7 @@
 	</div>
     <div class="form-group">
 		<label for="Jenis_simpanan">Jenis Simpanan</label>
-		<input type="text" required="required" name="Jenis_simpanan" id="Jenis_tabungan" value="{{ $p->Jenis_Tabungan}}">
+		<input type="text" required="required" name="Jenis_simpanan" id="Jenis_simpanan" value="{{ $p->Jenis_Simpanan}}">
 	</div>
     <div class="form-group">
 		<label for="Status">Status</label>
