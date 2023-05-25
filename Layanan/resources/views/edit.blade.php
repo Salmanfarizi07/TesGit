@@ -33,7 +33,7 @@
 		<label for="Status">Status</label>
 		<input type="text" required="required" name="Status" id="Status" value="{{ $p->Status}}">
 	</div>
-	<input type="hidden" name="Id_Peminjaman" value="{{ $p->Id_Peminjaman }}"> <br/>
+	<input type="hidden" name="Id_Surat" value="{{ $p->Id_Surat}}"> <br/>
 	<input type="submit" value="Simpan Data"class="Simpan">
 </form>
 @endforeach
