@@ -9,7 +9,7 @@
 </head>
 <body>
     <h2 class="judul"> Edit Jasa </h2>
-    <a href="/Pembayaran" class="kembali">Kembali</a>
+    <a href="/Jasa" class="kembali">Kembali</a>
 @foreach($Jasa as $p)
 <form action="/Jasa/update" method="post">
 	{{ csrf_field() }}
