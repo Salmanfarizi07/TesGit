@@ -14,12 +14,12 @@
 <a href="/" class="kembali">Kembali</a>
 <table border="1" class="tabel">
 		<tr>
-			<th>Id_Surat</th>
-			<th>Id_User</th>
-            <th>Jenis_Surat</th>
-            <th>Desc_Surat</th>
-            <th>Jenis_Tabungan</th>
-            <th>Jenis_Simpanan</th>
+			<th>Id Surat</th>
+			<th>Id User</th>
+            <th>Jenis Surat</th>
+            <th>Deskripsi</th>
+            <th>Jenis Tabungan</th>
+            <th>Jenis Simpanan</th>
             <th>Status</th>
 			<th>Opsi</th>
 		</tr>

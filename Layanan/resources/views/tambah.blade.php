@@ -13,7 +13,7 @@
     <form action="/Surat/store" method="post">
         {{ csrf_field() }}
         <div class="form-group">
-            <label for="Jenis_Surat">Jenis</label>
+            <label for="Jenis_Surat">Jenis Surat</label>
             <input type="text" name="Jenis_Surat" required="required">
         </div>
         <div class="form-group">
