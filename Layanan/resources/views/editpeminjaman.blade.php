@@ -8,9 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-@foreach($Peminjaman as $p)
-    <h2 class="judul"> Edit Peminjaman </h2>
+	<h2 class="judul"> Edit Peminjaman </h2>
     <a href="/Peminjaman" class="kembali">Kembali</a>
+@foreach($Peminjaman as $p)
 <form action="/Peminjaman/update" method="post">
 	{{ csrf_field() }}
     <div class="form-group">
