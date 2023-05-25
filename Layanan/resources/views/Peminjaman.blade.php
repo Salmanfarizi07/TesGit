@@ -6,10 +6,7 @@
 </head>
 <body>
  
-	<h2>Sistem Layanan</h2>
 	<h3>Daftar Peminjaman</h3>
-
- 	<a href="/pinjaman/tambah"> + Tambah pinjaman Baru</a>
 
 	<br/>
 	<br/>

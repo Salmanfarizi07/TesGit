@@ -14,7 +14,7 @@
 <form action="/Peminjaman/update" method="post">
 	{{ csrf_field() }}
     <div class="form-group">
-		<label for="jenis_peminjaman">Jenis_Peminjaman</label>
+		<label for="jenis_peminjaman">jenis_Peminjaman</label>
 		<input type="text" required="required" name="Jenis_Peminjaman" id="jenis_peminjaman" value="{{ $p->Jenis_Peminjaman }}">
 	</div>
 	<div class="form-group">
