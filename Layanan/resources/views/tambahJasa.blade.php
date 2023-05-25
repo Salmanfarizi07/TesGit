@@ -9,16 +9,30 @@
 </head>
 <body>
 <form action="/Jasa/store" method="post">
+    <a href="/Jasa" class="kembali">Kembali</a>
+    <form action="/Jasa/store" method="post">
 		{{ csrf_field() }}
-
-		<!--Id_Jasa <input type="text" name="Nama_Jasa" required="required"> <br/>
-		Id_User <input type="text" name="Desc_Jasa" required="required"> <br/>-->
-		Nama_Jasa <input type="text" name="Nama_Jasa" required="required"> <br/>
-        Jenis_Jasa <input type="text" name="Jenis_Jasa" required="required"> <br/>
-        Desc_Jasa <input type="text" name="Desc_Jasa" required="required"> <br/>
-        Tgl_Pengajuan <input type="text" name="Tgl_Pengajuan" required="required"> <br/>
-        Status_Jasa <input type="text" name="Status_Jasa" required="required"> <br/>
-		<input type="submit" value="Simpan Data">
+        <div class="form-group">
+            <label for="Nama_Jasa">Nama_Jasa</label>
+            <input type="text" name="Nama_Jasa" required="required">
+        </div>
+        <div class="form-group">
+            <label for="Jenis_Jasa">Jenis_Jasa</label>
+            <input type="text" name="jenis Jasa" required="required">
+        </div>
+        <div class="form-group">
+            <label for="Desc_jasa">Desc_Jasa</label>
+            <input type="text" name="Desc_Jasa" required="required">
+        </div>
+        <div class="form-group">
+            <label for="Tgl_Pengajuan">Desc_Jasa</label>
+            <input type="text" name="Desc_Jasa" required="required">
+        </div>
+        <div class="form-group">
+            <label for="Status_jasa">Status_Jasa</label>
+            <input type="text" name="Status_Jasa" required="required">
+        </div>
+        <input type="submit" value="Simpan Data" class="simpan">
 	</form>
 </body>
 </html>

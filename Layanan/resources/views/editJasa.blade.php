@@ -8,16 +8,33 @@
     <title>Document</title>
 </head>
 <body>
+    <h2 class="judul"> Edit Pembayaran </h2>
+    <a href="/Pembayaran" class="kembali">Kembali</a>
 @foreach($Jasa as $p)
 <form action="/Jasa/update" method="post">
 	{{ csrf_field() }}
-	<input type="hidden" name="Id_Jasa" value="{{ $p->Id_Jasa }}"> <br/>
-	Nama_Jasa <input type="text" required="required" name="Nama_Jasa" value="{{ $p->Nama_Jasa }}"> <br/>
-	Jenis_Jasa <input type="text" required="required" name="Jenis_Jasa" value="{{ $p->Jenis_Jasa }}"> <br/>
-    Desc_Jasa <input type="text" required="required" name="Desc_Jasa" value="{{ $p->Desc_Jasa }}"> <br/>
-    Tgl_Pengajuan <input type="text" required="required" name="Tgl_Pengajuan" value="{{ $p->Tgl_Pengajuan }}"> <br/>
-    Status_Jasa <input type="text" required="required" name="Status_Jasa" value="{{ $p->Status_Jasa }}"> <br/>
-	<input type="submit" value="Simpan Data">
+	<div class="form-group">
+		<label for="Nama_Jasa ">Nama_Jasa</label>
+		<input type="text" required="required" name="Jenis_Pembayaran" id="jenis_pembayaran" value="{{ $p->Jenis_Pembayaran }}">
+	</div>
+	<div class="form-group">
+		<label for="Jenis_Jasa">Jenis_Jasa</label>
+		<input type="text" required="required" name="Metode_Pembayaran" id="metode_pembayaran" value="{{ $p->Metode_Pembayaran }}">
+	</div>
+	<div class="form-group">
+		<label for="Desc_Jasa ">Desc_Jasa</label>
+		<input type="text" required="required" name="Status_Pembayaran" id="status_pembayaran" value="{{ $p->Status_Pembayaran }}">
+	</div>
+    <div class="form-group">
+		<label for="Tgl_Pengajuan ">Tgl_Pengajuan</label>
+		<input type="text" required="required" name="Status_Pembayaran" id="status_pembayaran" value="{{ $p->Status_Pembayaran }}">
+	</div>
+    <div class="form-group">
+		<label for="Status_Jasa ">Status_Jasa</label>
+		<input type="text" required="required" name="Status_Pembayaran" id="status_pembayaran" value="{{ $p->Status_Pembayaran }}">
+	</div>
+	<input type="hidden" name="Id_Pembayaran" value="{{ $p->Id_Pembayaran }}"> <br/>
+	<input type="submit" value="Simpan Data" class="simpan">
 </form>
 @endforeach
 </body>
