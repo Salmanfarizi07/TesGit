@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-<h2 class="judul">Tambah Data</h2>
+<h2 class="judul">Tambah Data Surat</h2>
     <a href="/Surat" class="kembali">Kembali</a>
     <form action="/Surat/store" method="post">
         {{ csrf_field() }}
