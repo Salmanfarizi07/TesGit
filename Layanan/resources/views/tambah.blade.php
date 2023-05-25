@@ -7,15 +7,31 @@
     <title>Document</title>
 </head>
 <body>
-<form action="/Surat/store" method="post">
-		{{ csrf_field() }}
-
-		Jenis_Surat <input type="text" name="Jenis_Surat" required="required"> <br/>
-		Desc_Surat <input type="text" name="Desc_Surat" required="required"> <br/>
-		Jenis_Tabungan <input type="text" name="Jenis_Tabungan" required="required"> <br/>
-        Jenis_Simpanan <input type="text" name="Jenis_Simpanan" required="required"> <br/>
-        Status <input type="text" name="Status" required="required"> <br/>
-		<input type="submit" value="Simpan Data">
+<h2 class="judul">Tambah Data</h2>
+    <a href="/Surat" class="kembali">Kembali</a>
+    <form action="/Surat/store" method="post">
+        {{ csrf_field() }}
+        <div class="form-group">
+            <label for="Jenis_Surat">Jenis_Surat</label>
+            <input type="text" name="Jenis_Surat" required="required">
+        </div>
+        <div class="form-group">
+            <label for="Desc_Surat">Desc_Surat</label>
+            <input type="text" name="Desc_surat" required="required">
+        </div>
+        <div class="form-group">
+            <label for="Jenis_Tabungan">Jenis_Tabungan</label>
+            <input type="text" name="Jenis_Tabungan" required="required">
+        </div>
+        <div class="form-group">
+            <label for="Jenis_Simpanan">Jenis_Simpanan</label>
+            <input type="text" name="Jenis_Simpanan" required="required">
+        </div>
+        <div class="form-group">
+            <label for="Status">Status</label>
+            <input type="text" name="Status" required="required">
+        </div>
+        <input type="submit" value="Simpan Data" class="simpan">
 	</form>
 </body>
 </html>
