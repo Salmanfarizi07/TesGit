@@ -14,7 +14,7 @@
 <a href="/" class="kembali">Kembali</a>
 <table border="1" class="tabel">
 		<tr>
-			<th>Id Surat</th>
+			<th>IdSurat</th>
 			<th>Id User</th>
             <th>Jenis Surat</th>
             <th>Deskripsi</th>
