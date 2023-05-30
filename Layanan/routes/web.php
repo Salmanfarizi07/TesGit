@@ -148,4 +148,5 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
     //view anggota layanan pembayaran
     Route::get('/LPembayaran', 'PembayaranControllers\LPembayaranController@index');
     Route::get('/Ptagihan', 'PembayaranControllers\LPembayaranController@ptagihan');
+    Route::get('/SimpananPokok', 'PembayaranControllers\LPembayaranController@simpananpokok');
 });
