@@ -13,14 +13,14 @@ class LPembayaranController extends Controller
             return view('Pembayaran.menu');
     }
 
-    /*public function ptabungan()
+    public function ptagihan()
     {
-            return view('Simpanan.ptabungan');
+            return view('Pembayaran.ptagihan');
     }
 
-    public function dtsarjana()
+    /*public function ()
     {
-            return view('Simpanan.daftar-t-sarjana');
+            return view('Pembayaran.');
     }*/
 
     public function tsarjanastore()
