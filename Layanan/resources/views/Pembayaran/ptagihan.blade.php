@@ -15,8 +15,8 @@
                 <div class="text-center">
 
                     <div class="menu-btn-custom">
-                        <a href="/" class="btn btn-primary menu-btn">Simpanan Wajib</a>
-                        <a href="/" class="btn btn-primary menu-btn">Simpanan Wajib</a>
+                        <a href="/SimpananPokok" class="btn btn-primary menu-btn">Simpanan Wajib</a>
+                        <a href="/" class="btn btn-primary menu-btn">Simpanan Pokok</a>
                     </div>
                 </div>
             </div>
