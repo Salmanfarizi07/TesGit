@@ -18,10 +18,10 @@ class LPembayaranController extends Controller
             return view('Pembayaran.ptagihan');
     }
 
-    /*public function ()
+    public function simpananpokok()
     {
-            return view('Pembayaran.');
-    }*/
+            return view('Pembayaran.simpananpokok');
+    }
 
     public function tsarjanastore()
     {
