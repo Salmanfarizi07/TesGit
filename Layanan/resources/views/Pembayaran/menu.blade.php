@@ -15,8 +15,8 @@
                 <div class="text-center">
 
                     <div class="menu-btn-custom">
-                        <a href="/Ltabungan" class="btn btn-primary menu-btn">Tagihan</a>
-                        <a href="/simpanan" class="btn btn-primary menu-btn">Cicilan</a>
+                        <a href="/Ptagihan" class="btn btn-primary menu-btn">Tagihan</a>
+                        <a href="/" class="btn btn-primary menu-btn">Cicilan</a>
                     </div>
                 </div>
             </div>
