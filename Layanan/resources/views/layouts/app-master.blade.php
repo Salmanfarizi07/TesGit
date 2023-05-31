@@ -121,6 +121,16 @@
           padding: 10px 20px;
       }
 
+      .ts1btn-konfirmasipembayaran {
+          background-color: black;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          padding: 20px 20px;
+          margin: 20px;
+          font-size: 22px;
+      }
+
 
       .navbar-brand {
         color: #fff;
@@ -217,6 +227,28 @@
         margin-left: 80px;
     }
 
+    .container2 {
+            display: flex;
+            justify-content: center;
+        }
+
+    .bluebox {
+          width: 500px; 
+          height: 200px;
+          padding: 20px;
+          border: 1px solid #ccc;
+          margin: 20px;
+          color: white;
+          text-align: left;
+          background-color: #007bff;
+        }
+
+    .text {
+      text-align: left;
+      font-size: 28px;
+      margin: 30px;
+      margin-top: 10px;
+    }
 
     </style>
 
