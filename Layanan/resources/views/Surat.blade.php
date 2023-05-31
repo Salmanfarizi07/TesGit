@@ -8,14 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-	<h3 class="h3">
-	Surat
-	</h3>
+<h2 class="judul">Sistem Informasi Surat</h2>
 <a href="/" class="kembali">Kembali</a>
 <table border="1" class="tabel">
 		<tr>
-			<th>IdSurat</th>
-			<th>Id User</th>
+			<th>ID Surat</th>
+			<th>ID User</th>
             <th>Jenis Surat</th>
             <th>Deskripsi</th>
             <th>Jenis Tabungan</th>
