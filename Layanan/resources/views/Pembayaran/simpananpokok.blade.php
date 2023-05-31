@@ -8,14 +8,26 @@
     </div>
 
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="container text-center">
+        <div class="container2">
+            <div class="container2 text-center">
                 <div class="text-center">
                     <form action="/Tsarjana/store" method="post">
                         {{ csrf_field() }}
-
+                        <div class="container2">
+                            <div class="bluebox">
+                                <h3>Data Anggota</h3>
+                                <!-- Konten untuk data anggota -->
+                            </div>
+                            <div class="bluebox">
+                                <h3>Total Tagihan</h3>
+                                <!-- Konten untuk total anggota -->
+                            </div>
+                        </div>
+                        <div class="text">
+                            Metode Pembayaran   :
+                        </div>
                         
-                            <input type="submit" value="Simpan Data" class="ts1btn-submit">
+                            <input type="submit" value="Konfirmasi Pembayaran" class="ts1btn-konfirmasipembayaran">
                         </div>
                     </form>
                 </div>
