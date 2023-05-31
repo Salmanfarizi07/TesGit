@@ -18,7 +18,7 @@
                 <div class="homepage-btn-custom">
                         <a href="/Ladmin" class="btn btn-primary homepage-btn">Admin</a>
                         <a href="/Lsimpanan" class="btn btn-primary homepage-btn">Simpanan</a>
-                        <a href="/Pembayaran" class="btn btn-primary homepage-btn">Pembayaran</a>
+                        <a href="/LPembayaran" class="btn btn-primary homepage-btn">Pembayaran</a>
                     </div>
                     <div class="homepage-btn-row">
                         <a href="/Peminjaman" class="btn btn-primary homepage-btn">Peminjaman</a>
