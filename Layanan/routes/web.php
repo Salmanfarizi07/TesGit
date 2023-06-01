@@ -144,6 +144,8 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
     Route::get('/Ptabungan', 'SimpananControllers\LsimpananController@ptabungan');
     Route::get('/daftar-t-sarjana', 'SimpananControllers\LsimpananController@dtsarjana');
     Route::post('/Tsarjana/store','SimpananControllers\LsimpananController@tsarjanastore');
+    Route::get('/tskonfirmasipembayaran', 'SimpananControllers\LsimpananController@tskonfirmasipemb');
+    
 
     //view anggota layanan pembayaran
     Route::get('/LPembayaran', 'PembayaranControllers\LPembayaranController@index');

@@ -33,5 +33,10 @@ class LsimpananController extends Controller
         ]);
         return redirect('/tskonfirmasipembayaran');
     }
+
+    public function tskonfirmasipemb()
+    {
+            return view('Simpanan.tskonfirmasipembayaran');
+    }
     
 }
