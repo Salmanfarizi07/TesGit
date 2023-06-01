@@ -1,5 +1,17 @@
 @include('layouts.app-master')
 
+<head>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+        .ts1form-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+
 <div class="bg-light p-5 rounded">
     <div class="jumbotron jumbotron-fluid mb-5">
         <div class="container">
@@ -20,20 +32,21 @@
                                 <input type="text" name="id_user" id="id_user" required="required" class="form-control">
                             </div>
                         </div>
-                        <div class="ts1form-group">
-                            <div class="input-box">
+                        
+                        <div class="ts1container">
+                            <div class="ts1select-container">
                                 <label for="paket">Pilih Paket:</label>
-                                <select name="paket" id="paket" required="required" class="form-control">
+                                <select name="paket" id="paket" required="required" class="form-control" onchange="showDetails(this)">
                                     <option value="" disabled selected>Pilih Paket</option>
-                                    <option value="paket1" onmouseover="showDetails('paket1')">Paket 1</option>
-                                    <option value="paket2" onmouseover="showDetails('paket2')">Paket 2</option>
-                                    <option value="paket3" onmouseover="showDetails('paket3')">Paket 3</option>
+                                    <option value="paket1">Paket 1</option>
+                                    <option value="paket2">Paket 2</option>
+                                    <option value="paket3">Paket 3</option>
                                 </select>
                             </div>
-                        </div>
 
-                        <div id="detailPaket">
-                            <!-- Detail paket akan ditampilkan di sini -->
+                            <div class="ts1detail-container" id="detailPaket">
+                                <!-- Detail paket akan ditampilkan di sini -->
+                            </div>
                         </div>
 
                         <script>
@@ -75,16 +88,24 @@
                             };
                         </script>
 
-
-
                         <div class="ts1form-group">
-                            <div class="input-box">
-                                <label for="tgl_awal">Tanggal:</label>
-                                <input type="text" name="tgl_awal" id="tgl_awal" required="required" class="form-control">
+                                <div class="input-box">
+                                    <label for="tgl_awal">Tanggal:</label>
+                                    <input type="text" name="tgl_awal" id="tgl_awal" required="required" class="form-control">
+                                </div>
                             </div>
-                        </div>
-                        <div class="ts1btn-submit-container">
-                            <input type="submit" value="Simpan Data" class="ts1btn-submit">
+                            <div class="ts1btn-submit-container">
+                                <input type="submit" value="Simpan Data" class="ts1btn-submit">
+                            </div>
+
+                            <script>
+                                $(function() {
+                                    $("#tgl_awal").datepicker({
+                                        dateFormat: "yy-mm-dd",
+                                        showButtonPanel: true
+                                    });
+                                });
+                            </script>
                         </div>
                     </form>
                 </div>

@@ -250,6 +250,27 @@
       margin-top: 10px;
     }
 
+    .ts1container {
+        display: flex;
+    }
+
+    .ts1select-container {
+        position: relative;
+        width: 200px;
+        margin-right: 20px;
+    }
+
+    .ts1detail-container {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 200px;
+        padding: 10px;
+        background-color: #f1f1f1;
+        border: 1px solid #ccc;
+        display: none;
+    }
+
     </style>
 
     
