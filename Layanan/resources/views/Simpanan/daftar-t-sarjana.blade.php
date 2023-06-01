@@ -33,7 +33,7 @@
                             </div>
                         </div>
                         
-                            <div>
+                            <div class="ts1form-group">
                                 <label for="paket">Pilih Paket:</label>
                                 <select name="paket" id="paket" required="required" class="form-control" onchange="showDetails(this)">
                                     <option value="" disabled selected>Pilih Paket</option>
