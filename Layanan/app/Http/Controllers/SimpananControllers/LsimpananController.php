@@ -31,7 +31,7 @@ class LsimpananController extends Controller
             'tgl_awal' => request('tgl_awal'),
             'jenis_tabungan' => 'sarjana'
         ]);
-        return redirect('/daftar-t-sarjana');
+        return redirect('/tskonfirmasipembayaran');
     }
     
 }
