@@ -37,14 +37,42 @@
                         </div>
 
                         <script>
-                            function showDetails(paket) {
+                            function showDetails(selectElement) {
                                 var detailDiv = document.getElementById('detailPaket');
                                 detailDiv.innerHTML = '';
 
-                                // Ganti dengan logika Anda untuk menampilkan detail paket berdasarkan nilai yang dipilih
-                                var detailText = 'Detail Paket ' + paket;
-                                detailDiv.innerHTML = detailText;
+                                var selectedOption = selectElement.options[selectElement.selectedIndex];
+                                var selectedValue = selectedOption.value;
+
+                                if (selectedValue !== '') {
+                                    // Ganti dengan logika Anda untuk menampilkan detail paket berdasarkan nilai yang dipilih
+                                    var detailText = getDetailPaket(selectedValue);
+                                    detailDiv.innerHTML = detailText;
+                                }
+
+                                detailDiv.style.display = 'block';
                             }
+
+                            function getDetailPaket(paket) {
+                                // Ganti dengan logika Anda untuk mendapatkan detail paket berdasarkan nilai yang dipilih
+                                var detailText = '';
+
+                                if (paket === 'paket1') {
+                                    detailText = 'Ini adalah detail Paket 1';
+                                } else if (paket === 'paket2') {
+                                    detailText = 'Ini adalah detail Paket 2';
+                                } else if (paket === 'paket3') {
+                                    detailText = 'Ini adalah detail Paket 3';
+                                }
+
+                                return detailText;
+                            }
+
+                            var selectElement = document.getElementById('paket');
+                            selectElement.onmouseout = function() {
+                                var detailDiv = document.getElementById('detailPaket');
+                                detailDiv.style.display = 'none';
+                            };
                         </script>
 
 
