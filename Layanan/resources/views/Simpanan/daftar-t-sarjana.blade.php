@@ -23,9 +23,15 @@
                         <div class="ts1form-group">
                             <div class="input-box">
                                 <label for="paket">Pilih Paket:</label>
-                                <input type="text" name="paket" id="paket" required="required" class="form-control">
+                                <select name="paket" id="paket" required="required" class="form-control">
+                                    <option value="">Pilih Paket</option>
+                                    <option value="paket1">Paket 1</option>
+                                    <option value="paket2">Paket 2</option>
+                                    <option value="paket3">Paket 3</option>
+                                </select>
                             </div>
                         </div>
+
                         <div class="ts1form-group">
                             <div class="input-box">
                                 <label for="tgl_awal">Tanggal:</label>
