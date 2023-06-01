@@ -43,50 +43,57 @@
                                     <option value="paket3">Paket 3</option>
                                 </select>
                             </div>
-
-                            <div class="ts1detail-container" id="detailPaket">
-                                <!-- Detail paket akan ditampilkan di sini -->
+                            <div id="details-container" class="details-container">
+                                <div id="paket1-details" class="details">Detail Paket 1</div>
+                                <div id="paket2-details" class="details">Detail Paket 2</div>
+                                <div id="paket3-details" class="details">Detail Paket 3</div>
                             </div>
                         </div>
 
+                        <style>
+                            .details-container {
+                                display: none;
+                            }
+
+                            .details {
+                                display: none;
+                                background-color: #f9f9f9;
+                                padding: 10px;
+                                margin-top: 10px;
+                            }
+                        </style>
+
                         <script>
                             function showDetails(selectElement) {
-                                var detailDiv = document.getElementById('detailPaket');
-                                detailDiv.innerHTML = '';
+                                var selectedValue = selectElement.value;
+                                var detailsContainer = document.getElementById('details-container');
+                                var detailsElements = detailsContainer.getElementsByClassName('details');
 
-                                var selectedOption = selectElement.options[selectElement.selectedIndex];
-                                var selectedValue = selectedOption.value;
+                                // Hide all detail elements
+                                for (var i = 0; i < detailsElements.length; i++) {
+                                    detailsElements[i].style.display = 'none';
+                                }
 
+                                // Show the selected detail element
                                 if (selectedValue !== '') {
-                                    // Ganti dengan logika Anda untuk menampilkan detail paket berdasarkan nilai yang dipilih
-                                    var detailText = getDetailPaket(selectedValue);
-                                    detailDiv.innerHTML = detailText;
+                                    var selectedDetailsElement = document.getElementById(selectedValue + '-details');
+                                    selectedDetailsElement.style.display = 'block';
                                 }
-
-                                detailDiv.style.display = 'block';
                             }
 
-                            function getDetailPaket(paket) {
-                                // Ganti dengan logika Anda untuk mendapatkan detail paket berdasarkan nilai yang dipilih
-                                var detailText = '';
-
-                                if (paket === 'paket1') {
-                                    detailText = 'Ini adalah detail Paket 1';
-                                } else if (paket === 'paket2') {
-                                    detailText = 'Ini adalah detail Paket 2';
-                                } else if (paket === 'paket3') {
-                                    detailText = 'Ini adalah detail Paket 3';
-                                }
-
-                                return detailText;
-                            }
-
+                            // Show details when hovering over select element
                             var selectElement = document.getElementById('paket');
-                            selectElement.onmouseout = function() {
-                                var detailDiv = document.getElementById('detailPaket');
-                                detailDiv.style.display = 'none';
-                            };
+                            selectElement.addEventListener('mouseover', function () {
+                                showDetails(this);
+                            });
+
+                            // Hide details when not hovering over select element
+                            selectElement.addEventListener('mouseout', function () {
+                                var detailsContainer = document.getElementById('details-container');
+                                detailsContainer.style.display = 'none';
+                            });
                         </script>
+
 
                         <div class="ts1form-group">
                                 <div class="input-box">
