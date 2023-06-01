@@ -33,8 +33,7 @@
                             </div>
                         </div>
                         
-                        <div class="ts1container">
-                            <div class="ts1select-container">
+                            <div>
                                 <label for="paket">Pilih Paket:</label>
                                 <select name="paket" id="paket" required="required" class="form-control" onchange="showDetails(this)">
                                     <option value="" disabled selected>Pilih Paket</option>
@@ -43,7 +42,7 @@
                                     <option value="paket3">Paket 3 - 30.000/Bulan selama 2 tahun</option>
                                 </select>
                             </div>  
-                        </div>
+                        
 
                         <div class="ts1form-group">
                                 <div class="input-box">
