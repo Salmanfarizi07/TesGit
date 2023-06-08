@@ -2,35 +2,29 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
 use Illuminate\Http\Request;
-use App\Http\Requests\RegisterRequest;
+use Illuminate\Support\Facades\Hash;
+use App\Models\User;
+use Session;
 
 class RegisterController extends Controller
 {
-    /**
-     * Display register page.
-     * 
-     * @return \Illuminate\Http\Response
-     */
-    public function show()
+    public function register()
     {
         return view('auth.register');
     }
-
-    /**
-     * Handle account registration request
-     * 
-     * @param RegisterRequest $request
-     * 
-     * @return \Illuminate\Http\Response
-     */
-    public function register(RegisterRequest $request) 
+    
+    public function actionregister(Request $request)
     {
-        $user = user::create($request->validated());
+        $user = User::create([
+            'email' => $request->email,
+            'username' => $request->username,
+            'password' => Hash::make($request->password),
+            'no_telp' => $request->no_telp,
+            'status_user' => $request->status_user
+        ]);
 
-        auth()->login($user);
-
-        return redirect('/')->with('success', "Account successfully registered.");
+        Session::flash('message', 'Register Berhasil. Akun Anda sudah Aktif silahkan Login menggunakan username dan password.');
+        return redirect('/Register');
     }
 }

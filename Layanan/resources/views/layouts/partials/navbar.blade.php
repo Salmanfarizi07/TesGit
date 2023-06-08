@@ -48,14 +48,14 @@
       @auth
         {{auth()->user()->name}}
         <div class="text-end">
-          <a href="{{ route('logout.perform') }}" class="btn btn-outline-light me-2">Logout</a>
+          <a href="{{ route('actionlogout') }}" class="btn btn-outline-light me-2">Logout</a>
         </div>
       @endauth
 
       @guest
         <div class="text-end">
-          <a href="{{ route('login.perform') }}" class="btn btn-outline-light me-2">Login</a>
-          <a href="{{ route('register.perform') }}" class="btn btn-primary">Sign-up</a>
+          <a href="{{ route('actionlogin') }}" class="btn btn-outline-light me-2">Login</a>
+          <a href="{{ route('actionregister') }}" class="btn btn-primary">Sign-up</a>
         </div>
       @endguest
     </div>

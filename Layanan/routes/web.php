@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\RegisterController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -12,6 +16,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+//LOGIN
+Route::get('/', [LoginController::class, 'login'])->name('login');
+Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
+
+Route::get('home', [HomeController::class, 'index'])->name('home');
+Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout');
+
+//REGISTER
+Route::get('/Register', [RegisterController::class, 'register'])->name('register');
+Route::post('actionregister', [RegisterController::class, 'actionregister'])->name('actionregister');
 
 //read, edit, delete tabel user
 Route::resource('/user', \App\Http\Controllers\UserController::class);
@@ -106,6 +121,7 @@ Route::post('/simpanan/input','App\Http\Controllers\SimpananController@input');
 Route::get('/simpanan/edit/{id}','App\Http\Controllers\SimpananController@editsimpanan');
 Route::post('/simpanan/update','App\Http\Controllers\SimpananController@update');
 Route::get('/simpanan/hapus/{id}','App\Http\Controllers\SimpananController@hapus');
+
 
 Route::group(['namespace' => 'App\Http\Controllers'], function()
 {   

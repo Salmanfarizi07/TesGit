@@ -3,60 +3,38 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests\LoginRequest;
 use Illuminate\Support\Facades\Auth;
-use App\Services\Login\RememberMeExpiration;
+use Session;
 
 class LoginController extends Controller
 {
-    use RememberMeExpiration;
-    /**
-     * Display login page.
-     * 
-     * @return Renderable
-     */
-    public function show()
+    public function login()
     {
-        return view('auth.login');
+        if (Auth::check()) {
+            return redirect('home');
+        }else{
+            return view('auth.login');
+        }
     }
 
-    /**
-     * Handle account login request
-     * 
-     * @param LoginRequest $request
-     * 
-     * @return \Illuminate\Http\Response
-     */
-    public function login(LoginRequest $request)
+    public function actionlogin(Request $request)
     {
-        $credentials = $request->getCredentials();
+        $data = [
+            'email' => $request->input('email'),
+            'password' => $request->input('password'),
+        ];
 
-        if(!Auth::validate($credentials)):
-            return redirect()->to('login')
-                ->withErrors(trans('auth.failed'));
-        endif;
-
-        $user = Auth::getProvider()->retrieveByCredentials($credentials);
-
-        Auth::login($user, $request->get('remember'));
-
-        if($request->get('remember')):
-            $this->setRememberMeExpiration($user);
-        endif;
-
-        return $this->authenticated($request, $user);
+        if (Auth::Attempt($data)) {
+            return view('home.index');
+        }else{
+            Session::flash('error', 'Email atau Password Salah');
+            return redirect('/');
+        }
     }
 
-    /**
-     * Handle response after user authenticated
-     * 
-     * @param Request $request
-     * @param Auth $user
-     * 
-     * @return \Illuminate\Http\Response
-     */
-    protected function authenticated(Request $request, $user) 
+    public function actionlogout()
     {
-        return redirect()->intended();
+        Auth::logout();
+        return redirect('/');
     }
 }

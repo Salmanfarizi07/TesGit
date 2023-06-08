@@ -16,13 +16,6 @@ class User extends Model implements AuthenticatableContract
     protected $fillable = ['status_user','username','no_telp','email','password',];
     protected $primaryKey = 'id_user';
     public $timestamps = true;
-
-    public function setPasswordAttribute($value)
-    {
-        $this->attributes['password'] = bcrypt($value);
-    } 
-
-
 }
 
 
