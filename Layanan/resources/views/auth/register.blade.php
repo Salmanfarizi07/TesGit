@@ -34,7 +34,11 @@
                 </div>
                 <div class="form-group">
                     <label><i class="fa fa-address-book"></i> Role</label>
-                    <input type="text" name="status_user" class="form-control" placeholder="Role" required="">
+                    <select name="status_user" class="form-control" placeholder="Role" required="">
+                        <option value=""></option>
+                        <option value="status_user">Admin</option>
+                        <option value="status_user">Anggota</option>
+                    </select>
                 </div>
                 <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-user"></i> Register</button>
                 <hr>
