@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 //import Model "Post
-use App\Models\Buku_Salman;
+use App\Models\Buku_salman;
 
 //return type View
 use Illuminate\View\View;
@@ -25,7 +25,7 @@ class BukulalaController extends Controller
         $Buku_salman = buku_salman::latest()->paginate(5);
 
         //render view with posts
-        return view('bukusalman.index', compact('Buku_Salman'));
+        return view('bukusalman.index', compact('Buku_salman'));
     }
 
     
