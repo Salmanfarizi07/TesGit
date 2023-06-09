@@ -56,7 +56,7 @@
 
                             <div class="form-group">
                                 <label class="font-weight-bold">Penerbit</label>
-                                <input type="text" class="form-control @error('Penerbit') is-invalid @enderror" name="Penerbit" value="{{ old('penerbit') }}" placeholder="">
+                                <input type="text" class="form-control @error('Penerbit') is-invalid @enderror" name="Penerbit" value="{{ old('Penerbit') }}" placeholder="">
                             
                                 <!-- error message untuk title -->
                                 @error('Penerbit')
@@ -80,7 +80,7 @@
 
                             <div class="form-group">
                                 <label class="font-weight-bold">JumlahStok</label>
-                                <input type="text" class="form-control @error('JumlahStok') is-invalid @enderror" name="stok" value="{{ old('JumlahStok') }}" placeholder="">
+                                <input type="text" class="form-control @error('JumlahStok') is-invalid @enderror" name="JumlahStok" value="{{ old('JumlahStok') }}" placeholder="">
                             
                                 <!-- error message untuk title -->
                                 @error('JumlahStok')

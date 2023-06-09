@@ -4,10 +4,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Laravel 10 CRUD with Image Upload Example from scratch - ItSolutionStuff.com</h2>
+                <h2>BUKU SAFANA</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('bukusafana.create') }}"> Create New Product</a>
+                <a class="btn btn-success" href="{{ route('bukusafana.create') }}"> Create Daftar BUKU</a>
             </div>
         </div>
     </div>
