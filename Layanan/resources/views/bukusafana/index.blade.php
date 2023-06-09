@@ -7,7 +7,7 @@
                 <h2>BUKU SAFANA</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('bukusafana.create') }}"> Create New Product</a>
+                <a class="btn btn-success" href="{{ route('bukusafana.create') }}"> Create Daftar BUKU</a>
             </div>
         </div>
     </div>
