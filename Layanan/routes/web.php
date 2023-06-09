@@ -79,6 +79,13 @@ Route::get('/tambahsimpanan', function () {
     return view('tambahsimpanan');
 });
 
+Route::get('/buku_zano', function () {
+    return view('buku_zano');
+});
+
+Route::get('/tambahbuku_zano', function () {
+    return view('tambahbuku_zano');
+});
 
 Route::get('/Surat', 'App\Http\Controllers\SuratController@index');
 Route::get('/Surat/tambah','App\Http\Controllers\SuratController@tambah');
@@ -121,6 +128,13 @@ Route::post('/simpanan/input','App\Http\Controllers\SimpananController@input');
 Route::get('/simpanan/edit/{id}','App\Http\Controllers\SimpananController@editsimpanan');
 Route::post('/simpanan/update','App\Http\Controllers\SimpananController@update');
 Route::get('/simpanan/hapus/{id}','App\Http\Controllers\SimpananController@hapus');
+
+Route::get('/buku_zano','App\Http\Controllers\buku_zanoController@index');
+/*Route::get('/simpanan/tambah','App\Http\Controllers\SimpananController@tambahsimpanan');
+Route::post('/simpanan/input','App\Http\Controllers\SimpananController@input');
+Route::get('/simpanan/edit/{id}','App\Http\Controllers\SimpananController@editsimpanan');
+Route::post('/simpanan/update','App\Http\Controllers\SimpananController@update');
+Route::get('/simpanan/hapus/{id}','App\Http\Controllers\SimpananController@hapus');*/
 
 
 Route::group(['namespace' => 'App\Http\Controllers'], function()
