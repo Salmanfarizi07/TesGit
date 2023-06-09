@@ -80,7 +80,7 @@
 
                             <div class="form-group">
                                 <label class="font-weight-bold">JumlahStok</label>
-                                <input type="text" class="form-control @error('JumlahStok') is-invalid @enderror" name="stok" value="{{ old('JumlahStok') }}" placeholder="">
+                                <input type="text" class="form-control @error('JumlahStok') is-invalid @enderror" name="JumlahStok" value="{{ old('JumlahStok') }}" placeholder="">
                             
                                 <!-- error message untuk title -->
                                 @error('JumlahStok')
