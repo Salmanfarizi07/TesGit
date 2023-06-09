@@ -2,6 +2,8 @@
 
 
 namespace App\Http\Controllers;
+use app\User;
+use app\Role;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
@@ -12,19 +14,20 @@ class PembayaranController extends Controller
     {
     	// mengambil data dari table Pembayaran
     	$Pembayaran = DB::table('Pembayaran')->get();
- 
+        $user = DB::table('user')->get();
+
     	// mengirim data Pembayaran ke view index
-    	return view('Pembayaran',['Pembayaran' => $Pembayaran]);
+    	return view('Pembayaran',['Pembayaran' => $Pembayaran,'User' => $user]);
  
     }
     
     // method untuk menampilkan view form tambah Pembayaran
     public function tambah()
     {
-    
-        // memanggil view tambah
-        return view('tambah');
-    
+        
+        $user = DB::table('user')->get();
+        return view('tambahPembayaran',['User' => $user]);
+   
     }
 
     // method untuk insert data ke table Pembayaran

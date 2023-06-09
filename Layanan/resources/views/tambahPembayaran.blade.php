@@ -13,6 +13,14 @@
     <form action="/Pembayaran/store" method="post">
         {{ csrf_field() }}
         <div class="form-group">
+            <label for="metode_pembayaran">Metode_Pembayaran</label>
+            <select name="Id_User" id="Id_User">
+            @foreach( $User as $u )
+                <option value="{{ $u->id_user }}" > {{ $u->username }} </option>
+            @endforeach
+            </select>
+        </div>
+        <div class="form-group">
             <label for="jenis_pembayaran">Jenis_Pembayaran</label>
             <input type="text" name="Jenis_Pembayaran" required="required">
         </div>

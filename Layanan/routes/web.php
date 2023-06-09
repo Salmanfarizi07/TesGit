@@ -43,10 +43,6 @@ Route::get('/Pembayaran', function () {
     return view('Pembayaran');
 });
 
-Route::get('/tambahPembayaran', function () {
-    return view('tambahPembayaran');
-});
-
 Route::get('/Peminjaman', function () {
     return view('Peminjaman');
 });

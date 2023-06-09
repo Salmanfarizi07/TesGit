@@ -14,15 +14,20 @@
 <table border="1" class="tabel">
 		<tr>
 			<th>Id_Pembayaran</th>
-			<th>Id_User</th>
+			<th>Nama User</th>
             <th>Jenis_Pembayaran</th>
             <th>Metode_Pembayaran</th>
             <th>Status_Pembayaran</th>
 			<th>Opsi</th>
 		</tr>
-		@foreach($Pembayaran as $p)
-		<tr>
+			@foreach($Pembayaran as $p)
+			<tr>
 			<td>{{ $p->Id_Pembayaran }}</td>
+			@foreach($User as $u)
+				@if($p->Id_User == $u->id_user)
+					<td>{{ $u->username }}</td>
+				@endif
+			@endforeach
 			<td>{{ $p->Id_User }}</td>
 			<td>{{ $p->Jenis_Pembayaran }}</td>
 			<td>{{ $p->Metode_Pembayaran }}</td>
@@ -35,7 +40,7 @@
 		</tr>
 		@endforeach
 	</table>
-	<button class="tambah"><a href="/tambahPembayaran">Tambah Pembayaran</a></button>
+	<button class="tambah"><a href="/Pembayaran/tambah">Tambah Pembayaran</a></button>
 	<style>
 		.tabel {
 			border-collapse: collapse;

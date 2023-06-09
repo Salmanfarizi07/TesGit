@@ -16,6 +16,8 @@
                         <div class="container2">
                             <div class="bluebox">
                                 <h3>Data Anggota</h3>
+                                ID Anggota: 
+                                
                                 <!-- Konten untuk data anggota -->
                             </div>
                             <div class="bluebox">
@@ -24,7 +26,16 @@
                             </div>
                         </div>
                         <div class="text">
-                            Metode Pembayaran   :
+                            <p>Metode pembayaran:</p>
+
+                                <input type="radio" name="metode" value="metode1">
+                                <label for="metode1"></label><br>
+
+                                <input type="radio" name="metode" value="metode2">
+                                <label for="metode2"></label><br>
+
+                                <input type="radio" name="metode" value="metode3">
+                                <label for="metode3"></label><br>
                         </div>
                         
                             <input type="submit" value="Konfirmasi Pembayaran" class="ts1btn-konfirmasipembayaran">
