@@ -33,7 +33,9 @@ Route::resource('/user', \App\Http\Controllers\UserController::class);
 //buku ujian
 Route::resource('/bukulala', \App\Http\Controllers\BukulalaController::class);
 //buku safana
-Route::resource('/bukusafana', \App\Http\Controllers\BukuSafanaController::class);
+Route::resource('bukusafana', BukuSafanaController::class);
+//buku dappa
+Route::resource('/bukudappa', \App\Http\Controllers\BukuDappaController::class);
 
 //salman
 Route::resource('/bukusalman', \App\Http\Controllers\BukusalmanController::class);
