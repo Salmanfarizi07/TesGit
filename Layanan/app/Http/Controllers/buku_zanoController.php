@@ -36,10 +36,12 @@ class buku_zanoController extends Controller
         // insert data ke table buku_zano
         DB::table('buku_zano')->insert([
             'IDBuku' => $request->IDBuku,
-            'Id_User' => $request->Id_User,
-            'Jenis_buku_zano' => $request->Jenis_buku_zano,
-            'Metode_buku_zano' => $request->Metode_buku_zano,
-            'Status_buku_zano' => $request->Status_buku_zano
+            'Judul' => $request->Judul,
+            'Penulis' => $request->Penulis,
+            'Penerbit' => $request->Penerbit,
+            'TahunTerbit' => $request->TahunTerbit,
+            'JumlahStok' => $request->JumlahStok,
+            'dendabuku' => $request->dendabuku
         ]);
         // alihkan halaman ke halaman buku_zano
         return redirect('/buku_zano');
@@ -62,9 +64,12 @@ class buku_zanoController extends Controller
         // update data buku_zano
         DB::table('buku_zano')->where('IDBuku',$request->IDBuku)->update([
             
-            'Jenis_buku_zano' => $request->Jenis_buku_zano,
-            'Metode_buku_zano' => $request->Metode_buku_zano,
-            'Status_buku_zano' => $request->Status_buku_zano
+            'Judul' => $request->Judul,
+            'Penulis' => $request->Penulis,
+            'Penerbit' => $request->Penerbit,
+            'TahunTerbit' => $request->TahunTerbit,
+            'JumlahStok' => $request->JumlahStok,
+            'dendabuku' => $request->dendabuku
         ]);
         // alihkan halaman ke halaman buku_zano
         return redirect('/buku_zano');

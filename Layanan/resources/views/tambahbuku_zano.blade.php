@@ -13,10 +13,13 @@
 
 		<!--Id_buku_zano <input type="text" name="Nama_buku_zano" required="required"> <br/>
 		Id_User <input type="text" name="Desc_buku_zano" required="required"> <br/>-->
-		Nama_buku_zano <input type="text" name="Nama_buku_zano" required="required"> <br/>
-        Biaya_buku_zano <input type="text" name="Biaya_buku_zano" required="required"> <br/>
-        Jenis_buku_zano <input type="text" name="Jenis_buku_zano" required="required"> <br/>
-        Status_buku_zano <input type="text" name="Status_buku_zano" required="required"> <br/>
+		Judul <input type="text" name="Judul" required="required"> <br/>
+        Penulis <input type="text" name="Penulis" required="required"> <br/>
+        Penerbit <input type="text" name="Penerbit" required="required"> <br/>
+        TahunTerbit <input type="text" name="TahunTerbit" required="required"> <br/>
+        JumlahStok <input type="text" name="JumlahStok" required="required"> <br/>
+        dendabuku <input type="text" name="dendabuku" required="required"> <br/>
+
 		<input type="submit" value="Simpan Data">
 	</form>
 </body>

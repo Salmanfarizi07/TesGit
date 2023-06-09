@@ -11,11 +11,13 @@
 @foreach($buku_zano as $p)
 <form action="/buku_zano/update" method="post">
 	{{ csrf_field() }}
-	<input type="hidden" name="Id_buku_zano" value="{{ $p->Id_buku_zano }}"> <br/>
-	Nama_buku_zano <input type="text" required="required" name="Nama_buku_zano" value="{{ $p->Nama_buku_zano }}"> <br/>
-	Biaya_buku_zano <input type="text" required="required" name="Biaya_buku_zano" value="{{ $p->Biaya_buku_zano }}"> <br/>
-    Jenis_buku_zano <input type="text" required="required" name="Jenis_buku_zano" value="{{ $p->Jenis_buku_zano }}"> <br/>
-    Status_buku_zano <input type="text" required="required" name="Status_buku_zano" value="{{ $p->Status_buku_zano }}"> <br/>
+	<input type="hidden" name="IDBuku" value="{{ $p->IDBuku }}"> <br/>
+	Judul <input type="text" required="required" name="Judul" value="{{ $p->Judul }}"> <br/>
+	Penulis <input type="text" required="required" name="Penulis" value="{{ $p->Penulis }}"> <br/>
+    Penerbit <input type="text" required="required" name="Penerbit" value="{{ $p->Penerbit }}"> <br/>
+    TahunTerbit <input type="text" required="required" name="TahunTerbit" value="{{ $p->TahunTerbit }}"> <br/>
+    JumlahStok <input type="text" required="required" name="JumlahStok" value="{{ $p->JumlahStok }}"> <br/>
+    dendabuku <input type="text" required="required" name="dendabuku" value="{{ $p->dendabuku }}"> <br/>
 	<input type="submit" value="Simpan Data">
 </form>
 @endforeach

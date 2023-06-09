@@ -32,14 +32,14 @@
             <td>{{ $b->JumlahStok }}</td>
             <td>{{ $b->dendabuku }}</td>
 			<td>
-				<a href="/Saham/edit/{{ $b->IDBuku }}">Edit</a>
+				<a href="/buku_zano/edit/{{ $b->IDBuku }}">Edit</a>
 				|
-				<a href="/Saham/hapus/{{ $b->IDBuku }}">Hapus</a>
+				<a href="/buku_zano/hapus/{{ $b->IDBuku }}">Hapus</a>
 			</td>
 		</tr>
 		@endforeach
 	</table>
-	<button class="tambah"><a href="/">Tambah Saham</a></button>
+	<button class="tambah"><a href="/tambahbuku_zano">Tambah Buku</a></button>
 </body>
 
 </html>
