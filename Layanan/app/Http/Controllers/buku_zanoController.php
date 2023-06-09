@@ -35,7 +35,7 @@ class buku_zanoController extends Controller
     {
         // insert data ke table buku_zano
         DB::table('buku_zano')->insert([
-            'Id_buku_zano' => $request->Id_buku_zano,
+            'IDBuku' => $request->IDBuku,
             'Id_User' => $request->Id_User,
             'Jenis_buku_zano' => $request->Jenis_buku_zano,
             'Metode_buku_zano' => $request->Metode_buku_zano,
@@ -47,10 +47,10 @@ class buku_zanoController extends Controller
     }
 
     // method untuk edit data buku_zano
-    public function edit($Id_buku_zano)
+    public function edit($IDBuku)
     {
         // mengambil data buku_zano berdasarkan id yang dipilih
-        $buku_zano = DB::table('buku_zano')->where('Id_buku_zano',$Id_buku_zano)->get();
+        $buku_zano = DB::table('buku_zano')->where('IDBuku',$IDBuku)->get();
         // passing data buku_zano yang didapat ke view edit.blade.php
         return view('editbuku_zano',['buku_zano' => $buku_zano]);
     
@@ -60,7 +60,7 @@ class buku_zanoController extends Controller
     public function update(Request $request)
     {
         // update data buku_zano
-        DB::table('buku_zano')->where('Id_buku_zano',$request->Id_buku_zano)->update([
+        DB::table('buku_zano')->where('IDBuku',$request->IDBuku)->update([
             
             'Jenis_buku_zano' => $request->Jenis_buku_zano,
             'Metode_buku_zano' => $request->Metode_buku_zano,
@@ -71,10 +71,10 @@ class buku_zanoController extends Controller
     }
 
     // method untuk hapus data buku_zano
-    public function hapus($Id_buku_zano)
+    public function hapus($IDBuku)
     {
         // menghapus data buku_zano berdasarkan id yang dipilih
-        DB::table('buku_zano')->where('Id_buku_zano',$Id_buku_zano)->delete();
+        DB::table('buku_zano')->where('IDBuku',$IDBuku)->delete();
             
         // alihkan halaman ke halaman buku_zano
         return redirect('/buku_zano');

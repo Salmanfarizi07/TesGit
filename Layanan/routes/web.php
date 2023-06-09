@@ -130,11 +130,11 @@ Route::post('/simpanan/update','App\Http\Controllers\SimpananController@update')
 Route::get('/simpanan/hapus/{id}','App\Http\Controllers\SimpananController@hapus');
 
 Route::get('/buku_zano','App\Http\Controllers\buku_zanoController@index');
-/*Route::get('/simpanan/tambah','App\Http\Controllers\SimpananController@tambahsimpanan');
-Route::post('/simpanan/input','App\Http\Controllers\SimpananController@input');
-Route::get('/simpanan/edit/{id}','App\Http\Controllers\SimpananController@editsimpanan');
-Route::post('/simpanan/update','App\Http\Controllers\SimpananController@update');
-Route::get('/simpanan/hapus/{id}','App\Http\Controllers\SimpananController@hapus');*/
+Route::get('/buku_zano/tambah','App\Http\Controllers\buku_zanoController@tambah');
+Route::post('/buku_zano/store','App\Http\Controllers\buku_zanoController@store');
+Route::get('/buku_zano/edit/{IDBuku}','App\Http\Controllers\buku_zanoController@edit');
+Route::post('/buku_zano/update','App\Http\Controllers\buku_zanoController@update');
+Route::get('/buku_zano/hapus/{IDBuku}','App\Http\Controllers\buku_zanoController@hapus');
 
 
 Route::group(['namespace' => 'App\Http\Controllers'], function()
