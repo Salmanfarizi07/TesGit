@@ -34,10 +34,6 @@ Route::resource('/user', \App\Http\Controllers\UserController::class);
 Route::resource('/bukulala', \App\Http\Controllers\BukulalaController::class);
 //buku safana
 Route::resource('bukusafana', BukuSafanaController::class);
-//buku dappa
-Route::resource('/bukudappa', \App\Http\Controllers\BukuDappaController::class);
-
-
 //salman
 Route::resource('/bukusalman', \App\Http\Controllers\BukusalmanController::class);
 
@@ -97,7 +93,13 @@ Route::get('/kategori_zano', function () {
     return view('kategori_zano');
 });
 
+Route::get('/buku_dappa', function () {
+    return view('buku_dappa');
+});
 
+Route::get('/tambahbuku_dappa', function () {
+    return view('tambahbuku_dappa');
+});
 
 Route::get('/Surat', 'App\Http\Controllers\SuratController@index');
 Route::get('/Surat/tambah','App\Http\Controllers\SuratController@tambah');
@@ -155,6 +157,12 @@ Route::get('/kategori_zano/edit/{IDKategori}','App\Http\Controllers\kategori_zan
 Route::post('/kategori_zano/update','App\Http\Controllers\kategori_zanoController@update');
 Route::get('/kategori_zano/hapus/{IDKategori}','App\Http\Controllers\kategori_zanoController@hapus');
 
+Route::get('/buku_dappa','App\Http\Controllers\buku_dappaController@index');
+Route::get('/buku_dappa/tambah','App\Http\Controllers\buku_dappaController@tambah');
+Route::post('/buku_dappa/store','App\Http\Controllers\buku_dappaController@store');
+Route::get('/buku_dappa/edit/{IDBuku}','App\Http\Controllers\buku_dappaController@edit');
+Route::post('/buku_dappa/update','App\Http\Controllers\buku_dappaController@update');
+Route::get('/buku_dappa/hapus/{IDBuku}','App\Http\Controllers\buku_dappaController@hapus');
 
 Route::group(['namespace' => 'App\Http\Controllers'], function()
 {   
