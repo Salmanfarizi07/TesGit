@@ -8,12 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 
-class Buku_lala extends Model 
+class BukuSafana extends Model 
 {
     use HasFactory;
 
-    protected $table = 'bukusafana';
-    protected $primaryKey = 'IDBuku';
+    protected $table = 'bukusafanas';
     public $timestamps = true;
     protected $fillable = ['IDBuku','Judul','Penulis','Penerbit',
     'TahunTerbit', 'JumlahStok','DendaBuku'];

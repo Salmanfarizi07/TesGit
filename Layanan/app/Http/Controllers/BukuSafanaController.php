@@ -18,7 +18,7 @@ class BukuSafanaController extends Controller
     public function index(): View
     {
         
-        $bukusafana = BukuSafana::latest()->paginate(5);
+        $bukusafana = Bukusafana::latest()->paginate(5);
         
         return view('bukusafana.index',compact('bukusafana'))
                     ->with('i', (request()->input('page', 1) - 1) * 5);
