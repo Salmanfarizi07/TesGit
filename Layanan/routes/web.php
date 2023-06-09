@@ -32,6 +32,8 @@ Route::post('actionregister', [RegisterController::class, 'actionregister'])->na
 Route::resource('/user', \App\Http\Controllers\UserController::class);
 //buku ujian
 Route::resource('/bukulala', \App\Http\Controllers\BukulalaController::class);
+//buku safana
+Route::resource('bukusafana', BukuSafanaController::class);
 
 Route::get('/Surat', function () {
     return view('Surat');
