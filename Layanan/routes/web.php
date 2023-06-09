@@ -30,6 +30,8 @@ Route::post('actionregister', [RegisterController::class, 'actionregister'])->na
 
 //read, edit, delete tabel user
 Route::resource('/user', \App\Http\Controllers\UserController::class);
+//buku ujian
+Route::resource('/bukulala', \App\Http\Controllers\BukulalaController::class);
 
 Route::get('/Surat', function () {
     return view('Surat');
