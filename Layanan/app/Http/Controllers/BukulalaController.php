@@ -126,5 +126,25 @@ class BukulalaController extends Controller
         //redirect to index
         return redirect()->route('bukulala.index')->with(['success' => 'Data Berhasil Diubah!']);
     }
+
+    /**
+     * destroy
+     *
+     * @param  mixed $post
+     * @return void
+     */
+    public function destroy($id): RedirectResponse
+    {
+        //get post by ID
+        $Buku_lala = buku_lala::findOrFail($id);
+
+        
+
+        //delete post
+        $Buku_lala->delete();
+
+        //redirect to index
+        return redirect()->route('bukulala.index')->with(['success' => 'Data Berhasil Dihapus!']);
+    }
     
 }

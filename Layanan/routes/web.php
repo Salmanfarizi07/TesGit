@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RegisterController;
-
+use App\Http\Controllers\BukuSafanaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,8 +34,11 @@ Route::resource('/user', \App\Http\Controllers\UserController::class);
 Route::resource('/bukulala', \App\Http\Controllers\BukulalaController::class);
 //buku safana
 Route::resource('bukusafana', BukuSafanaController::class);
-//buku daffa
+//buku dappa
 Route::resource('/bukudappa', \App\Http\Controllers\BukuDappaController::class);
+
+//salman
+Route::resource('/bukusalman', \App\Http\Controllers\BukusalmanController::class);
 
 Route::get('/Surat', function () {
     return view('Surat');
@@ -81,6 +84,13 @@ Route::get('/tambahsimpanan', function () {
     return view('tambahsimpanan');
 });
 
+Route::get('/buku_zano', function () {
+    return view('buku_zano');
+});
+
+Route::get('/tambahbuku_zano', function () {
+    return view('tambahbuku_zano');
+});
 
 Route::get('/Surat', 'App\Http\Controllers\SuratController@index');
 Route::get('/Surat/tambah','App\Http\Controllers\SuratController@tambah');
@@ -123,6 +133,13 @@ Route::post('/simpanan/input','App\Http\Controllers\SimpananController@input');
 Route::get('/simpanan/edit/{id}','App\Http\Controllers\SimpananController@editsimpanan');
 Route::post('/simpanan/update','App\Http\Controllers\SimpananController@update');
 Route::get('/simpanan/hapus/{id}','App\Http\Controllers\SimpananController@hapus');
+
+Route::get('/buku_zano','App\Http\Controllers\buku_zanoController@index');
+Route::get('/buku_zano/tambah','App\Http\Controllers\buku_zanoController@tambah');
+Route::post('/buku_zano/store','App\Http\Controllers\buku_zanoController@store');
+Route::get('/buku_zano/edit/{IDBuku}','App\Http\Controllers\buku_zanoController@edit');
+Route::post('/buku_zano/update','App\Http\Controllers\buku_zanoController@update');
+Route::get('/buku_zano/hapus/{IDBuku}','App\Http\Controllers\buku_zanoController@hapus');
 
 
 Route::group(['namespace' => 'App\Http\Controllers'], function()

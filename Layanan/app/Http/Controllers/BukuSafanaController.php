@@ -18,7 +18,7 @@ class BukuSafanaController extends Controller
     public function index(): View
     {
         
-        $bukusafana = BukuSafana::latest()->paginate(5);
+        $bukusafana = Bukusafana::latest()->paginate(5);
         
         return view('bukusafana.index',compact('bukusafana'))
                     ->with('i', (request()->input('page', 1) - 1) * 5);
@@ -50,7 +50,7 @@ class BukuSafanaController extends Controller
         $input = $request->all();
 
       
-        Product::create($input);
+        BukuSafana::create($input);
        
         return redirect()->route('bukusafana.index')
                         ->with('success','bukusafana created successfully.');
@@ -78,14 +78,19 @@ class BukuSafanaController extends Controller
     public function update(Request $request, BukuSafana $bukusafana): RedirectResponse
     {
         $request->validate([
-            'name' => 'required',
-            'detail' => 'required'
+            'IDBuku' => 'required',
+            'Judul' => 'required',
+            'Penulis' => 'required',
+            'Penerbit' => 'required',
+            'TahunTerbit' => 'required',
+            'JumlahStok' => 'required',
+            'DendaBuku' => 'required',
         ]);
     
         $input = $request->all();
     
           
-        $daftarbarang->update($input);
+        $bukusafana->update($input);
       
         return redirect()->route('bukusafana.index')
                         ->with('success','bukusafana updated successfully');
