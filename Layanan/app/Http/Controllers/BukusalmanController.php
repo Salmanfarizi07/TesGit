@@ -49,7 +49,7 @@ class BukusalmanController extends Controller
         ]);
 
         //create post
-        Buku_lala::create([
+        Buku_salman::create([
             
             'id_buku'    => $request->id_buku,
             'judul'  => $request->judul,
