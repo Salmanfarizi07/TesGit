@@ -25,7 +25,7 @@ class BukulalaController extends Controller
         $Buku_lala = buku_lala::latest()->paginate(5);
 
         //render view with posts
-        return view('buku_lala.index', compact('Buku_lala'));
+        return view('bukulala.index', compact('Buku_lala'));
     }
 
     

@@ -20,7 +20,7 @@
                 </div>
                 <div class="card border-0 shadow-sm rounded">
                     <div class="card-body">
-                        <a href="{{ route('buku_lala.index') }}" class="btn btn-md btn-success mb-3">TAMBAH POST</a>
+                        <a href="{{ route('bukulala.index') }}" class="btn btn-md btn-success mb-3">TAMBAH POST</a>
                         <table class="table table-bordered">
                             <thead>
                               <tr>
@@ -51,9 +51,9 @@
                 <td>{{ $item->kategori }}</td>
                 <td>{{ $item->tgl }}</td>
                 <td class="text-center">
-                    <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('buku_lala.destroy', $item->id_buku) }}" method="POST">
+                    <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('bukulala.destroy', $item->id_buku) }}" method="POST">
                         
-                        <a href="{{ route('buku_lala.edit', $item->id_buku) }}" class="btn btn-sm btn-primary">EDIT</a>
+                        <a href="{{ route('bukulala.edit', $item->id_buku) }}" class="btn btn-sm btn-primary">EDIT</a>
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>
