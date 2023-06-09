@@ -11,7 +11,7 @@ use Illuminate\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 
-class UserController extends Controller
+class BukulalaController extends Controller
 {
     /**
      * index
