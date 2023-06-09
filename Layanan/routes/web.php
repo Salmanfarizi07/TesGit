@@ -90,6 +90,14 @@ Route::get('/tambahbuku_zano', function () {
     return view('tambahbuku_zano');
 });
 
+Route::get('/kategori_zano', function () {
+    return view('kategori_zano');
+});
+
+Route::get('/tambahkategori_zano', function () {
+    return view('tambahkategori_zano');
+});
+
 Route::get('/Surat', 'App\Http\Controllers\SuratController@index');
 Route::get('/Surat/tambah','App\Http\Controllers\SuratController@tambah');
 Route::post('/Surat/store','App\Http\Controllers\SuratController@store');
@@ -138,6 +146,13 @@ Route::post('/buku_zano/store','App\Http\Controllers\buku_zanoController@store')
 Route::get('/buku_zano/edit/{IDBuku}','App\Http\Controllers\buku_zanoController@edit');
 Route::post('/buku_zano/update','App\Http\Controllers\buku_zanoController@update');
 Route::get('/buku_zano/hapus/{IDBuku}','App\Http\Controllers\buku_zanoController@hapus');
+
+Route::get('/kategori_zano','App\Http\Controllers\kategori_zanoController@index');
+Route::get('/kategori_zano/tambah','App\Http\Controllers\kategori_zanoController@tambah');
+Route::post('/kategori_zano/store','App\Http\Controllers\kategori_zanoController@store');
+Route::get('/kategori_zano/edit/{IDKategori}','App\Http\Controllers\kategori_zanoController@edit');
+Route::post('/kategori_zano/update','App\Http\Controllers\kategori_zanoController@update');
+Route::get('/kategori_zano/hapus/{IDKategori}','App\Http\Controllers\kategori_zanoController@hapus');
 
 
 Route::group(['namespace' => 'App\Http\Controllers'], function()
