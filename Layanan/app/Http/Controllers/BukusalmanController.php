@@ -27,6 +27,47 @@ class BukusalmanController extends Controller
         //render view with posts
         return view('buku_salman.index', compact('Buku_salman'));
     }
+    public function create(): View
+    {
+        return view('buku_salman.create');
+    }
+    public function store(Request $request): RedirectResponse
+    {
+        //validate form
+        $this->validate($request, [
+            
+        'id_buku' => 'required',
+        'judul' => 'required',
+        'penulis',
+        'penerbit',
+        'tahun',
+        'stok',
+        'denda',
+        'peminjam',
+        'kategori',
+        'tgl'
+        ]);
+
+        //create post
+        Buku_salman::create([
+            
+            'id_buku'    => $request->id_buku,
+            'judul'  => $request->judul,
+            'penulis' => $request->penulis,
+            'penerbit' => $request->penerbit,
+            'tahun' => $request->tahun,
+            'stok' => $request->stok,
+            'denda' => $request->denda,
+            'peminjam' => $request->peminjam,
+            'kategori' => $request->kategori,
+            'tgl' => $request->tgl,
+
+        ]);
+
+        //redirect to index
+        return redirect()->route('buku_salman.index')->with(['success' => 'Data Berhasil Disimpan!']);
+    }
+
 
     
     
