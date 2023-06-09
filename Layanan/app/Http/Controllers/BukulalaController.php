@@ -107,11 +107,7 @@ class BukulalaController extends Controller
         $Buku_lala = buku_lala::findOrFail($id);
 
         //update post data
-        $User->status_user = $request->status_user;
-        $User->username = $request->username;
-        $User->no_telp = $request->no_telp;
-        $User->email = $request->email;
-        $User->password = $request->password;
+        
         $Buku_lala->id_buku = $request->id_buku;
         $Buku_lala->judul = $request->judul;
         $Buku_lala->penulis = $request->penulis;
