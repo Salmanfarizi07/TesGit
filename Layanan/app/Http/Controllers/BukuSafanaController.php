@@ -85,7 +85,7 @@ class BukuSafanaController extends Controller
         $input = $request->all();
     
           
-        $daftarbarang->update($input);
+        $bukusafanazs->update($input);
       
         return redirect()->route('bukusafana.index')
                         ->with('success','bukusafana updated successfully');
