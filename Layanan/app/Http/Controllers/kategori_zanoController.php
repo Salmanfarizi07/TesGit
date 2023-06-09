@@ -25,9 +25,9 @@ class kategori_zanoController extends Controller
     // method untuk menampilkan view form tambah kategori_zano
     public function tambah()
     {
-        
-        // memanggil view tambah
-        return view('tambah');
+
+        $buku_zano = DB::table('buku_zano')->get();
+        return view('tambahkategori_zano',['buku_zano' => $buku_zano]);
    
     }
 
@@ -37,8 +37,7 @@ class kategori_zanoController extends Controller
         // insert data ke table kategori_zano
         DB::table('kategori_zano')->insert([
             'IDKategori' => $request->IDKategori,
-            
-            'dendabuku' => $request->dendabuku
+            'NamaKategori' => $request->NamaKategori
         ]);
         // alihkan halaman ke halaman kategori_zano
         return redirect('/kategori_zano');

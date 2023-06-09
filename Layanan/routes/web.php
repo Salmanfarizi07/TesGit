@@ -96,9 +96,7 @@ Route::get('/kategori_zano', function () {
     return view('kategori_zano');
 });
 
-Route::get('/tambahkategori_zano', function () {
-    return view('tambahkategori_zano');
-});
+
 
 Route::get('/Surat', 'App\Http\Controllers\SuratController@index');
 Route::get('/Surat/tambah','App\Http\Controllers\SuratController@tambah');

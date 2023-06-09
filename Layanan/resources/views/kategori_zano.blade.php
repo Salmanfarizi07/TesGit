@@ -39,7 +39,7 @@
 		</tr>
 		@endforeach
 	</table>
-	<button class="tambah"><a href="/tambahkategori_zano">Tambah Buku</a></button>
+	<button class="tambah"><a href="/kategori_zano/tambah">Tambah Buku</a></button>
 </body>
 
 </html>
