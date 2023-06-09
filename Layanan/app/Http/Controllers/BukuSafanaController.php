@@ -78,14 +78,19 @@ class BukuSafanaController extends Controller
     public function update(Request $request, BukuSafana $bukusafana): RedirectResponse
     {
         $request->validate([
-            'name' => 'required',
-            'detail' => 'required'
+            'IDBuku' => 'required',
+            'Judul' => 'required',
+            'Penulis' => 'required',
+            'Penerbit' => 'required',
+            'TahunTerbit' => 'required',
+            'JumlahStok' => 'required',
+            'DendaBuku' => 'required',
         ]);
     
         $input = $request->all();
     
           
-        $bukusafanas->update($input);
+        $bukusafana->update($input);
       
         return redirect()->route('bukusafana.index')
                         ->with('success','bukusafana updated successfully');
