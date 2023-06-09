@@ -34,6 +34,8 @@ Route::resource('/user', \App\Http\Controllers\UserController::class);
 Route::resource('/bukulala', \App\Http\Controllers\BukulalaController::class);
 //buku safana
 Route::resource('bukusafana', BukuSafanaController::class);
+//buku daffa
+Route::resource('/bukudappa', \App\Http\Controllers\BukuDappaController::class);
 
 Route::get('/Surat', function () {
     return view('Surat');
