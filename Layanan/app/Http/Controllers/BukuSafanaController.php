@@ -50,7 +50,7 @@ class BukuSafanaController extends Controller
         $input = $request->all();
 
       
-        Product::create($input);
+        BukuSafana::create($input);
        
         return redirect()->route('bukusafana.index')
                         ->with('success','bukusafana created successfully.');
