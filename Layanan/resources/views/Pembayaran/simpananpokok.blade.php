@@ -28,11 +28,15 @@
                         <div class="text">
                             <p>Metode pembayaran:</p>
 
-                                <input type="radio" name="metode" value="metode1">
-                                <label for="metode1"></label><br>
+                                <input type="radio" id="option1" name="metode1" value="gopay" style="display: none;">
+                                <label for="option1">
+                                <img src="https://drive.google.com/uc?id=1Aok_L6-bfw5WKYLPStlBg4-BriAwHPvH"> Gopay
+                                </label>
+                                
 
                                 <input type="radio" name="metode" value="metode2">
                                 <label for="metode2"></label><br>
+                                Transfer Bank
 
                                 <input type="radio" name="metode" value="metode3">
                                 <label for="metode3"></label><br>
