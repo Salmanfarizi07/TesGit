@@ -250,6 +250,22 @@
       margin-top: 10px;
     }
 
+    input[type="radio"] {
+      display: none;
+    }
+
+    input[type="radio"] + label img {
+      opacity: 0.5; 
+      width: 50px; 
+      height: 50px;
+    }
+
+input[type="radio"]:checked + label img {
+      opacity: 1; 
+      width: 50px; 
+      height: 50px;
+    }
+
     
 
     </style>
